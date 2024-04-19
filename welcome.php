@@ -6,6 +6,7 @@
 </head>
 <body>
     <h1>Welcome EDUpro Team</h1>
-    <?php include 'footer.php';?>
+    
+    <?php include"footer.html"; ?>
 </body>
 </html>
