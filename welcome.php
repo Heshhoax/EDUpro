@@ -7,6 +7,6 @@
 <body>
     <h1>Welcome EDUpro Team</h1>
     
-    <?php include"footer.html"; ?>
+    <?php include"footer.php"; ?>
 </body>
 </html>
