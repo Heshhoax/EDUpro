@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
 </head>
-<body>	
+<body >	
  <footer>
 <table class="desing"  width="100%">
 	<tr style="border:0px">
