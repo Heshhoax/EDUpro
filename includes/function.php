@@ -70,7 +70,7 @@ function emptyinputslogin($username, $password) {
 function loginuser($conn,$username,$password){
     $uidexist=uidexist($conn, $username, $username);
     if ($uidexist === false) {
-        header('location:../signlog.php?error=logininvalid1');
+        header('location:../login.php?error=logininvalid1');
         exit();
     }
     $hash = $uidexist["pwd"];
