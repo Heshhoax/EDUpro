@@ -18,7 +18,7 @@
 	<a href="https://www.instagram.com/"><img src="images/square-instagram.svg" width="50" height="50"></a>
 	<a href="https://www.googleplus.com/"><img src="images/square-google-plus.svg" width="50" height="50"></a>
 	<br>
-	<a href="reviews.html"><img src="images/mainlogo.jpg" width="170" height="60"></a>
+	
 <br><center><h3 style="font-family:sans-serif"> Terms and conditions</center></h3>
 <footer>
     <p>&copy; <?php echo date("Y"); ?> EDUpro All rights reserved.</p>
