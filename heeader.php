@@ -9,7 +9,7 @@
 <body>
     <hr>
     <header>
-        <img src="images/mainlogo.jpg" width="170" height="60" >
+        <img src="images/mainlogo.jpg" width="200" height="60" >
     </header>
     <hr>
     
