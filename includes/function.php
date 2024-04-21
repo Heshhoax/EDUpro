@@ -77,7 +77,7 @@ function loginuser($conn,$username,$password){
     $checkpwd = password_verify($password, $hash);
 
     if ($checkpwd === false) {
-        header("location:../signlog.php?error=logininvalid2");
+        header("location:../login.php?error=logininvalid2");
         exit();
     }else if ($checkpwd === true) {
 
