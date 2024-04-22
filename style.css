@@ -1,5 +1,7 @@
 header{
-    
+    position:fixed;
+    top: 0;
+    background-color:#800080;
 }
 hr {
     background-color: black;
