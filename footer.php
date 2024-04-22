@@ -9,7 +9,7 @@
 </head>
 <body >	
 	<div class="footer">
- <footer>
+ <footer><hr>
 <table class="desing"  width="100%">
 	<tr style="border:0px">
 		<th style="font-family:Geneva"><h3 style="font-family:sans-serif; font-size:20px;">Follow us on</th></h3>
@@ -22,15 +22,13 @@
 	<br>
 	
 <br><center><h3 style="font-family:sans-serif"> Terms and conditions</center></h3>
-<footer>
     <p>&copy; <?php echo date("Y"); ?> EDUpro All rights reserved.</p>
-</footer>
-</th><hr>
-	
+</th>
 </th>
 </table>
-</footer>
 <hr>
+</footer>
+
 	</div>
 </body>
 </html>
