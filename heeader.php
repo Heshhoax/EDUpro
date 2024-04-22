@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>
-        welcome
-    </h1>
+    <hr>
+    <header>
+        <img src="images/edupro_black.png" width="150" height="60" >
+    </header>
+    <hr>
+    
 </body>
 </html>
