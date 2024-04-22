@@ -8,7 +8,7 @@
 </head>
 <body>
     <!--Packages and offers-->
-    <?php include('header.php');?>
+    <?php include('heeader.php');?>
     <div id="side0">
         <h3>Packages And Offers</h3>
 
