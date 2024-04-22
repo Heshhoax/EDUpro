@@ -12,7 +12,7 @@
 }
 
 #side0 h3{
-    color: #9e03bd;
+    color: #800080;
     font-weight: bold;
     margin-top: 60px;
     align-items: center;
@@ -32,7 +32,7 @@
 #side1 p{
     margin-top: 20px;
     cursor: pointer;
-    color: #9e03bd;
+    color: #800080;
 }
 
 #side1 p:hover{
@@ -47,7 +47,7 @@
     width: 100px;
     height: 20px;
     color: white;
-    background-color: #9e03bd;
+    background-color: #800080;
     border-radius: 3px ;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
