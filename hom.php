@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Welcome </h1><?php include('includes/loginc.php'); ?>
+    <h1>Welcome </h1>
     <p>welcome to home page</p>
 </body>
 </html>

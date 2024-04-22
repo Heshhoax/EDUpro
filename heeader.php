@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="header">
     <hr>
     <header>
         <img src="images/edupro_black.png" width="150" height="60" >
     </header>
     <hr>
-    
+    </div>
 </body>
 </html>

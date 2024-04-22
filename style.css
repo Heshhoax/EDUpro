@@ -1,7 +1,13 @@
 header{
     background-color:purple;
+    position:fixed;
+    top: 0;
 }
 hr {
     background-color: black;
    
+}
+footer{
+    position:fixed;
+    bottom: 0;
 }
