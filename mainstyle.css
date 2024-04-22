@@ -1,0 +1,63 @@
+/*Start of Package And Offers*/
+.packagerow {
+    display: flex;
+    justify-content: center;
+}
+
+#side0{
+    background-color: white;
+    height: 75vh;
+    border-radius: 5px;
+    box-shadow: rgb(100,100,111,0.2)0px 7px 29px 0px ;
+}
+
+#side0 h3{
+    color: #9e03bd;
+    font-weight: bold;
+    margin-top: 60px;
+    align-items: center;
+    text-align: center;
+}
+
+#side1{
+    background-color: white;
+    height: 65vh;
+    width: 50vh;
+    border-radius: 5px;
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px; ;
+    align-items: center;
+    text-align: center;
+}
+
+#side1 p{
+    margin-top: 20px;
+    cursor: pointer;
+    color: #9e03bd;
+}
+
+#side1 p:hover{
+    color: black;  
+}
+
+.buy{
+    margin-top: 30px;
+}
+
+#btn-buy{
+    width: 100px;
+    height: 20px;
+    color: white;
+    background-color: #9e03bd;
+    border-radius: 3px ;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+#btn-buy:hover
+{
+    
+    color: black;
+    background-color: greenyellow;
+}
+
+/*End of Packages And Offers*/
