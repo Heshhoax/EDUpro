@@ -1,7 +1,11 @@
 header{
-    background-color:#800080;
+    
 }
 hr {
     background-color: black;
    
+}
+footer{
+    position:fixed;
+    bottom: 0;
 }
