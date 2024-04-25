@@ -21,7 +21,7 @@
 	<a href="https://www.googleplus.com/"><img src="images/square-google-plus.svg" width="50" height="50"></a>
 	<br>
 	
-<br><center><h3 style="font-family:sans-serif"> Terms and conditions</center></h3>
+<br><center><h3 style="font-family:sans-serif"><a href="#"> Terms and conditions<a></center></h3>
     <p>&copy; <?php echo date("Y"); ?> EDUpro All rights reserved.</p>
 </th>
 </th>
