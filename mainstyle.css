@@ -61,3 +61,128 @@
 }
 
 /*End of Packages And Offers*/
+
+/*Start of course*/
+
+#side4{
+    background-color: white;
+    height: 75vh;
+    border-radius: 5px;
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+}
+
+#side4 h2{
+    color: #800080;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-left: 30px;
+    align-items: center;
+    text-align: left;
+}
+#side7{
+    background-color: white;
+    height: 65vh;
+    width: 50vh;
+    border-radius: 5px;
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+    align-items: center;
+    text-align: center;
+   
+}
+#side7 p{
+    margin-top: 20px;
+    cursor: pointer;
+    color: #800080;
+    min-height: 110px;
+}
+#side7 p:hover{
+    color: black;
+}
+.packagerow {
+    display: flex;
+    justify-content: center;
+   
+}
+.buy{
+    margin-top: 30px;
+}
+#btn-buy{
+    width: 100px;
+    height: 20px;
+    color: white;
+    background-color: #800080;
+    border-radius: 3px ;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+#btn-buy:hover
+{
+    
+    color: black;
+    background-color: yellow;
+}
+.container{
+    width: 100%;
+    height: 20vh;
+    background-color: #800080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pagination{
+    display: flex;
+    align-items: center;
+    background-color:white;
+    padding: 10px 40px;
+    border-radius: 5px;
+
+}
+ul{
+    margin: 10px 20px;
+}
+
+ul li{
+    display: inline-block;
+    margin: 0 10px;
+    width: 25px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 20px;
+    cursor: pointer;
+    background-position: 0 -45px;
+    transition: background-position 0.5s;
+
+}
+
+ul li.active{
+    color: #800080;
+    background-image: -o-repeating-linear-gradient(red,red);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.btn1, .btn2{
+    display: inline-flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 500;
+    color: #800080;
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.btn1 img{
+    width: 24px;
+    margin-right: 15px;
+    transform: rotate(180deg);
+}
+.btn2 img{
+    width: 24px;
+    margin-left: 15px;
+  
+}
+
+/*End of course*/
