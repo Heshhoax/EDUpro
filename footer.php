@@ -15,13 +15,15 @@
 		<th style="font-family:Geneva"><h3 style="font-family:sans-serif; font-size:20px;">Follow us on</th></h3>
 	</tr>
 	<tr> <th>
-    <a href="https://www.facebook.com/"><img src="images/square-facebook.svg" width="50" height="50"></a>
-	<a href="https://www.twitter.com/"><img src="images/square-twitter.svg" width="50" height="50"></a>
-	<a href="https://www.instagram.com/"><img src="images/square-instagram.svg" width="50" height="50"></a>
-	<a href="https://www.googleplus.com/"><img src="images/square-google-plus.svg" width="50" height="50"></a>
-	<br>
+	<div class="icon1">
+    	<a href="https://www.facebook.com/"><img src="images/square-facebook.svg" width="50" height="50"></a>
+		<a href="https://www.twitter.com/"><img src="images/square-twitter.svg" width="50" height="50"></a>
+		<a href="https://www.instagram.com/"><img src="images/square-instagram.svg" width="50" height="50"></a>
+		<a href="https://www.googleplus.com/"><img src="images/square-google-plus.svg" width="50" height="50"></a>
+	</div>
+		<br>
 	
-<br><center><h3 style="font-family:sans-serif"><a href="#"> Terms and conditions<a></center></h3>
+<br><center><h4 style="font-family:sans-serif"><a href="#"> Terms and conditions<a></center></h4>
     <p>&copy; <?php echo date("Y"); ?> EDUpro All rights reserved.</p>
 </th>
 </th>
