@@ -1,3 +1,103 @@
+/*Start of Login*/
+
+.log{
+    background-color: white;
+    height: 70vh;
+    width: 100%;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+}
+ .log h2{
+    color: #800080;
+    font-weight: bold;
+    margin-top: 60px;
+    align-items: center;
+    text-align: center;
+ }
+
+ #side15{
+    margin-left: 400px;
+ }
+ #side .inp-btn{
+    color: #800080;
+    font-weight: bold;
+    border-color: #800080;
+    border-radius: 5px;
+    width: 500px;
+    margin-top: 20px;
+    margin-left: 5px;
+    height: 36px;
+    align-items: center; 
+ }
+ #side .inp-btn1{
+    color: #800080;
+    font-weight: bold;
+    border-color: #800080;
+    border-radius: 5px;
+    width: 500px;
+    margin-top: 20px;
+    margin-left: 55px;
+    height: 36px;
+    align-items: center; 
+ }
+ 
+.log h5{
+    color: #800080;
+    margin-top: 5px;
+    margin-right: 750px;
+    text-align: center;
+}
+.log h5:hover{
+    color: black;
+    font-weight: bold;  
+    cursor: pointer; 
+}
+.log1 h6{
+    color: #800080;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.log1 h6:hover{
+    color: black;
+    font-weight: bold;  
+    cursor: pointer; 
+}
+#login {
+    width: 150px;
+    height: 22px;
+    margin-top: 150px;
+    color: #800080;
+    background-color: white;
+    margin-left: 690px;
+    align-items: center;
+    border-radius: 3px ;
+    font-weight: bold;
+}
+#login:hover{
+    color:white;
+    background: #800080;
+    cursor: pointer;
+}
+#login1{
+    width: 150px;
+    height: 22px;
+    color: #800080;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 1300px;
+    align-items: center;
+    border-radius: 3px ;
+    font-weight: bold;
+}
+#login1:hover{
+    color:white;
+    background: #800080;
+    cursor: pointer;
+}
+/*End of Login*/
+
 /*Start of Package And Offers*/
 .packagerow {
     display: flex;
