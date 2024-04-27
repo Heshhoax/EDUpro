@@ -9,34 +9,16 @@
 <body>
 <form action="includes/signinc.php" method="POST">
       <h1>Signin</h1>
-      <div class="input-box">
-        <input type="text" placeholder="First name" name="fname" required>
-        <i class='bx bxs-user'></i>
-      </div>
-      <div class="input-box">
-        <input type="text" placeholder="Last name" name="lname">
-        <i class='bx bxs-lock-alt' ></i>
-      </div>
-      <div class="input-box">
-        <input type="text" placeholder="Username" name="username" required>
-        <i class='bx bxs-lock-alt' ></i>
-      </div>
-      <div class="input-box">
-        <input type="text" placeholder="Email" name="email" required>
-        <i class='bx bxs-lock-alt' ></i>
-      </div>
-      <div class="input-box">
-        <input type="password" placeholder="Password" name="password">
-        <i class='bx bxs-lock-alt' ></i>
-      </div>
-      <div class="input-box">
-        <input type="password" placeholder="Repeat Password" name="repeatpassword" required>
-        <i class='bx bxs-lock-alt' ></i>
-      </div>
+    
+        <input type="text" placeholder="First name" name="fname" required><br>
+        <input type="text" placeholder="Last name" name="lname"><br>
+        <input type="text" placeholder="Username" name="username" required><br>
+        <input type="text" placeholder="Email" name="email" required><br>
+        <input type="password" placeholder="Password" name="password"><br>
+        <input type="password" placeholder="Repeat Password" name="repeatpassword" required><br>
   
       <button type="submit" class="btn" name="submit">SIGN UP</button>
-   
-      </div>
+
     </form>
 
     
