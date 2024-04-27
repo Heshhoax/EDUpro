@@ -186,3 +186,67 @@ ul li.active{
 }
 
 /*End of course*/
+
+/*Start of Lecture Registration*/
+
+.log{
+    background-color: white;
+    height: 80vh;
+    width: 100%;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+}
+ .log h3{
+    color: #800080;
+    font-weight: bold;
+    margin-top: 60px;
+    align-items: center;
+    text-align: center;
+ }
+
+ #side5{
+    margin-left: 500px;
+ }
+
+ #side10 .inp-reg{
+    color: #800080;
+    border-color: #800080;
+    border-radius: 5px;
+    width: 150px;
+    margin-top: 5px;
+    margin-left: 5px;
+    height: 15px;
+    align-items: center; 
+ }
+ 
+ #side10 .inp-area{
+    color: #800080;
+    border-color: #800080;
+    border-radius: none;
+    width: 550px;
+    margin-top: 20px;
+    margin-left: 500px;
+    height: 100px;
+    align-items:center; 
+    text-align: left;
+ }
+ #register {
+    width: 150px;
+    height: 22px;
+    margin-top: 20px;
+    color: #800080;
+    background-color: white;
+    margin-left: 685px;
+    align-items: center;
+    border-radius: 3px ;
+    font-weight: bold;
+}
+#register:hover{
+    color:white;
+    background: #800080;
+    cursor: pointer;
+}
+
+ 
+/*End of Lecture Registration*/
