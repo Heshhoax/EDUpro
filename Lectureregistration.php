@@ -14,13 +14,17 @@
         <h3>Lecture Registration Form</h3>
             <div id="side5">  
                 <label>UserName :</label><input type="text" class="inp-reg" required><br><br>
-                <label>Email :</label><input type="email" class="inp-reg" required><br><br>
                 <label>First Name :</label><input type="text" class="inp-reg" required>
                 <label>Last Name :</label><input type="text" class="inp-reg" required><br><br>
+                <label>Email :</label><input type="email" class="inp-reg" required>
                 <label>Enter N.I.C :</label><input type="text" class="inp-reg" required><br><br>
+                <label>Gender </label>
+                <input type="radio" name="gender" value="Male"  required><label>Male</label>
+                <input type="radio" name="gender" value="Female"  required><label>Female</label><br><br>
                 <label>Password :</label><input type="password" class="inp-reg" required>
                 <label>Confirmed Password :</label><input type="password" class="inp-reg" required><br><br>
                 <label>Subjects :</label><input type="text" class="inp-reg" required><br><br>
+                <label>Mobile No :</label><input type="text" class="inp-reg" required><br><br>
                 <label>Age :</label><input type="number" class="inp-reg" required>
                 <label>D.O.B :</label><input type="date" class="inp-reg" required>
             </div>
