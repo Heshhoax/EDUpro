@@ -10,6 +10,10 @@
     <div class="header">
     <hr>
     <header>
+        <div class="header1">
+            <button id="btn-login"><a href="login.php">Login</a></button>
+            <button id="btn-sign"><a href="signin.php">Sign Up </a></button>   
+        </div>
         <img src="images/edupro_black.png" width="150" height="60" >
     </header>
     <hr>
