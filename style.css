@@ -1,4 +1,4 @@
-header{
+.header{
     position:fixed;
     top: 0;
     z-index: 1000;
@@ -8,6 +8,69 @@ header{
 hr {
     background-color: black;
    
+}
+.header1{
+    background-color: white;
+    width: 100%;
+    height: 8vh;
+}
+.header1 :hover{
+    color:white;
+    background: #800080;
+    
+}
+#btn-login{
+    width: 100px;
+    border: 2px solid #800080;
+    margin-top: 10px;
+    margin-left: 1300px;
+    color: #800080;
+    font-weight: bold;
+    border-radius: 5px;
+    height: 5vh;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btn-login a{
+    text-decoration: none;
+    color: #800080;
+    transition: 0.5s ease;
+}
+#btn-login a:hover{
+    background-color: #800080;
+    color: white;
+    
+}
+#btn-login:hover{
+    background-color: #800080;
+    color: white;
+    border: 2px solid #800080;
+}
+#btn-sign{
+    width: 100px;
+    border: 2px solid #800080;
+    margin-top: 10px;
+    color: #800080;
+    font-weight: bold;
+    border-radius: 5px;
+    height: 5vh;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btn-sign a{
+    text-decoration: none;
+    color: #800080;
+    transition: 0.5s ease;
+}
+#btn-sign a:hover{
+    background-color: #800080;
+    color: white;
+    
+}
+#btn-sign:hover{
+    background-color: #800080;
+    color: white;
+    border: 2px solid #800080;
 }
 footer{
     bottom: 0;
