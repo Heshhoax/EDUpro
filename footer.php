@@ -12,7 +12,7 @@
  <footer><hr>
 <table class="desing"  width="100%">
 	<tr style="border:0px">
-		<th style="font-family:Geneva"><h3 style="font-family:sans-serif; font-size:20px;">Follow us on</th></h3>
+		<th style="font-family:Geneva"><h3 style="font-family:'Times New Roman', Times, serif; font-size:20px;">Follow us on</th></h3>
 	</tr>
 	<tr> <th>
 	<div class="icon1">
@@ -23,7 +23,7 @@
 	</div>
 		<br>
 	
-<br><center><h4 style="font-family:sans-serif"><a href="#"> Terms and conditions<a></center></h4>
+<br><center><h4 style="font-family:'Times New Roman', Times, serif"><a href="#" style="color: #800080;"> Terms and conditions<a></center></h4>
     <p>&copy; <?php echo date("Y"); ?> EDUpro All rights reserved.</p>
 </th>
 </th>
