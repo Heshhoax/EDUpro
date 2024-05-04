@@ -291,13 +291,13 @@ ul li.active{
 
 .log{
     background-color: white;
-    height: 80vh;
+    height: 95vh;
     width: 100%;
     margin: 20px;
     border-radius: 5px;
     box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
 }
- .log h3{
+ .log h1{
     color: #800080;
     font-weight: bold;
     margin-top: 60px;
@@ -315,7 +315,7 @@ ul li.active{
     border-radius: 5px;
     width: 150px;
     margin-top: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
     height: 15px;
     align-items: center; 
  }
@@ -325,16 +325,18 @@ ul li.active{
     border-color: #800080;
     border-radius: none;
     width: 550px;
-    margin-top: 20px;
-    margin-left: 500px;
+    margin-top: 10px;
     height: 100px;
     align-items:center; 
     text-align: left;
  }
+ #pripol h5{
+    margin-left: 350px;
+ }
  #register {
     width: 150px;
     height: 22px;
-    margin-top: 20px;
+    margin-top: 10px;
     color: #800080;
     background-color: white;
     margin-left: 685px;
