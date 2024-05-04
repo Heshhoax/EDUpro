@@ -25,16 +25,18 @@
             <div id="side55">   
                 <label>Gender :</label><br>
                 <input type="radio" name="gender" value="Male"  required><label>Male</label>
-                <input type="radio" name="gender" value="Female"  required><label>Female</label><br><br>
+                <input type="radio" name="gender" value="Female"  required><label>Female</label><br>
                 <label>Last Name :</label><input type="text"  name="lname" class="inp-reg" required><br>
-                <label>Mobile No :</label><input type="text"  name="mobileno" class="inp-reg" required><br><br>
-                <label>Confirmed Password :</label><input type="password" name="confirmedpassword" class="inp-reg" required><br><br>
+                <label>Mobile No :</label><input type="text"  name="mobileno" class="inp-reg" required><br>
+                <label>Confirmed Password :</label><input type="password" name="confirmedpassword" class="inp-reg" required><br>
+                <label>Subject :</label><input type="text"  name="Subject" class="inp-reg" required><br>
                 <label>D.O.B :</label><input type="date"  name="dob" class="inp-reg" required>
             </div>
                 
         </div>
         <input type="text" placeholder="Working Experiences" name="Experiences" class="inp-area" required>
             <div id="pripol">
+                <input type="checkbox" name="terms" value="termsandconditions" class="term" required><label>I agreed to Terms and Conditions</label>
                 <h5><a href="#">Privacy And Policy</a></h5>
             </div>  
         <button type="submit" id="register" name="submit">Register</button>

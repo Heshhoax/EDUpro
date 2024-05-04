@@ -300,7 +300,7 @@ ul li.active{
  .log h1{
     color: #800080;
     font-weight: bold;
-    margin-top: 60px;
+    margin-top: 70px;
     align-items: center;
     text-align: center;
  }
@@ -332,7 +332,7 @@ ul li.active{
     color: #800080;
     border-color: #800080;
     border-radius: 3px;
-    width: 220px;
+    width: 225px;
     height: 15px;
  }
  
@@ -348,8 +348,13 @@ ul li.active{
     text-align: left;
  }
  #pripol h5{
-    margin-left: 350px;
+    margin-left: 340px;
  }
+ #pripol .term{
+    margin-left: 500px;
+ }
+ 
+
  #register {
     width: 150px;
     height: 22px;
