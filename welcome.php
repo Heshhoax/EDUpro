@@ -1,3 +1,31 @@
+<?php
+// Start the session
+session_start();
+
+// Check if the user is logged in
+if(isset($_SESSION["username"])) {
+    // User is logged in, display the user's name
+    $username = $_SESSION["username"];
+    echo "Welcome, $username!";
+} else {
+    // User is not logged in, redirect to the login page
+    header('location:../login.php');
+    exit();
+}
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome</title>
+</head>
+<body>
+    <!-- Your home page content here -->
+    <h1>Welcome to the Home Page</h1>
+    <!-- Other content of your home page -->
+</body>
+</html>
+
+
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
@@ -5,8 +33,7 @@
     <title>Welcome</title>
 </head>
 <body>
-    <?php include'heeader.php'; ?>
-    <h1>Welcome to EDUpro</h1>
+    
         <h3> Empowering Educators, Inspiring Excellence!</h3>
 
 <p>Greetings and a heartfelt welcome to EDUpro, your premier destination for professional development in education. Whether you're an experienced educator, a budding teacher, or an enthusiastic lifelong learner, you've found your home among peers who share your passion for transforming lives through education.

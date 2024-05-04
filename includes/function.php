@@ -82,7 +82,7 @@ function loginuser($conn,$username,$password){
     }else if ($checkpwd === true) {
 
         session_start();
-        $_SESSION["uid"] = $uidexist["userid"];
+        $_SESSION["uid"] = $uidexist["ID"];
         $_SESSION["username"] = $uidexist["username"];
         header('location:../welcome.php');
         exit();
