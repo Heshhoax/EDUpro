@@ -291,7 +291,7 @@ ul li.active{
 
 .log{
     background-color: white;
-    height: 95vh;
+    height: 80vh;
     width: 100%;
     margin: 20px;
     border-radius: 5px;
@@ -309,15 +309,31 @@ ul li.active{
     margin-left: 500px;
  }
 
- #side10 .inp-reg{
+ #side5 .inp-reg{
+    display: flex;
     color: #800080;
     border-color: #800080;
-    border-radius: 5px;
-    width: 150px;
+    border-radius: 3px;
+    width: 235px;
     margin-top: 5px;
     margin-left: 10px;
     height: 15px;
     align-items: center; 
+ }
+ .reg {
+    display: flex;   
+}
+ #side55{
+    margin-left: 70px;
+ }
+
+ #side55 .inp-reg{
+    display: flex;
+    color: #800080;
+    border-color: #800080;
+    border-radius: 3px;
+    width: 220px;
+    height: 15px;
  }
  
  #side10 .inp-area{
@@ -326,6 +342,7 @@ ul li.active{
     border-radius: none;
     width: 550px;
     margin-top: 10px;
+    margin-left: 500px;
     height: 100px;
     align-items:center; 
     text-align: left;
