@@ -297,10 +297,10 @@ ul li.active{
     border-radius: 5px;
     box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
 }
- .log h3{
+ .log h1{
     color: #800080;
     font-weight: bold;
-    margin-top: 60px;
+    margin-top: 70px;
     align-items: center;
     text-align: center;
  }
@@ -309,15 +309,31 @@ ul li.active{
     margin-left: 500px;
  }
 
- #side10 .inp-reg{
+ #side5 .inp-reg{
+    display: flex;
     color: #800080;
     border-color: #800080;
-    border-radius: 5px;
-    width: 150px;
+    border-radius: 3px;
+    width: 235px;
     margin-top: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
     height: 15px;
     align-items: center; 
+ }
+ .reg {
+    display: flex;   
+}
+ #side55{
+    margin-left: 70px;
+ }
+
+ #side55 .inp-reg{
+    display: flex;
+    color: #800080;
+    border-color: #800080;
+    border-radius: 3px;
+    width: 225px;
+    height: 15px;
  }
  
  #side10 .inp-area{
@@ -325,16 +341,24 @@ ul li.active{
     border-color: #800080;
     border-radius: none;
     width: 550px;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 500px;
     height: 100px;
     align-items:center; 
     text-align: left;
  }
+ #pripol h5{
+    margin-left: 340px;
+ }
+ #pripol .term{
+    margin-left: 500px;
+ }
+ 
+
  #register {
     width: 150px;
     height: 22px;
-    margin-top: 20px;
+    margin-top: 10px;
     color: #800080;
     background-color: white;
     margin-left: 685px;
