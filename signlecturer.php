@@ -33,9 +33,9 @@
                 <label>Age :</label><input type="text"  name="age" class="inp-reg" required>
             </div>  
             <div id="side55">   
-                <label>Gender :</label><br>
+                <label>Gender :</label>
                 <input type="radio" name="gender" value="Male"  required><label>Male</label>
-                <input type="radio" name="gender" value="Female"  required><label>Female</label><br>
+                <input type="radio" name="gender" value="Female"  required><label>Female</label><br><br>
                 <label>Last Name :</label><input type="text"  name="lname" class="inp-reg" required><br>
                 <label>Mobile No :</label><input type="text"  name="mobileno" class="inp-reg" required><br>
                 <label>Confirmed Password :</label><input type="password" name="confirmedpassword" class="inp-reg" required><br>
@@ -49,12 +49,12 @@
                     <option value="IP">Programming</option>
                     <option value="CS">Comunicatin Skill</option>
                     <option value="ISDM">Information System Identify Module</option>
-                </select>    
+                </select><br>    
                 <label>D.O.B :</label><input type="date"  name="dob" class="inp-reg" required>
             </div>
                 
         </div>
-        <input type="text" placeholder="Working Experiences" name="Experiences" class="inp-area" required>
+            <textarea rows="10" placeholder="Working Experiences"  name="Experiences" class="inp-area" required></textarea>
             <div id="pripol">
                 <input type="checkbox" name="terms" value="termsandconditions" class="term" required><label>I agreed to Terms and Conditions</label>
                 <h5><a href="#">Privacy And Policy</a></h5>
