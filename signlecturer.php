@@ -20,6 +20,15 @@
                 <label>Enter NIC :</label><input type="text"  name="nic" class="inp-reg" required>
                 <label>Password :</label><input type="password"  name="password" class="inp-reg" required>
                 <label>Specialization :</label><input type="text"  name="Specialization" class="inp-reg" required>
+                    <select id="specialization">
+                        <option value="ITSIT">BSc(Hons) in Information Technology Specializating in Information Technology</option>
+                        <option value="ITSCSNE">BSc(Hons) in Information Technology Specializating in Computer System & Network Engineering</option>
+                        <option value="ITSSE">BSc(Hons) in Information Technology Specializating in Software Engineering</option>
+                        <option value="ITSISE">BSc(Hons) in Information Technology Specializating in Information Systems Engineering</option>
+                        <option value="ITSCS">BSc(Hons) in Information Technology Specializating in Cyber Security</option>
+                        <option value="ITSTM">BSc(Hons) in Information Technology Specializating in Interactive Media</option>
+                        <option value="ITSDS">BSc(Hons) in Information Technology Specializating in Data Science</option>
+                    </select>    
                 <label>Age :</label><input type="text"  name="age" class="inp-reg" required>
             </div>  
             <div id="side55">   
