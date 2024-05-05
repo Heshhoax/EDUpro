@@ -76,8 +76,8 @@
             </div>
             <input type="checkbox" id="showPassword"> <label for="showPassword">Show Password</label>
             <div class="remember-forgot">
-                <label><input type="checkbox">Remember Me</label>
-                <a href="#">Forgot Password</a>
+                <label><input type="checkbox" id="remember">Remember Me</label>
+                <a href="forgotpassword.php">Forgot Password</a>
             </div>
             <button type="submit" class="btn" name="submit">Login</button>
             <div class="register-link">
@@ -85,6 +85,9 @@
             </div>
         </form>
     </div>
+    <div id="content" style="align-items:center";>
+
+</div>
 
     <!--js part for password reveling-->
 
@@ -99,6 +102,29 @@
                 passwordInput.type = 'password'; // Hide password
             }
         });
+
+        //content div load
+
+        document.querySelector('a[href="forgotpassword.php"]').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default link behavior
+
+            // Fetch the content of the "forgotpassword.php" page
+            fetch('forgotpassword.php')
+                .then(response => response.text()) // Convert response to text
+                .then(html => {
+                    // Set the content of the "content" div to the fetched HTML
+                    document.getElementById('content').innerHTML = html;
+                })
+                .catch(error => console.error('Error fetching forgot password page:', error));
+        });
     </script>
+    <?php
+    if(isset($_POST['remember'])) {
+    // Set cookie to remember the user's username or email
+    $cookie_name = "remember_username_or_email";
+    $cookie_value = $_POST['uid']; // Assuming 'uid' is the name of your input field
+    setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 30 days expiration
+        }
+        ?>
 </body>
 </html>

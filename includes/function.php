@@ -51,8 +51,8 @@ function createuser($conn, $username, $fname, $lname, $email, $password) {
         header("location:../signup.html?error=stmtfailed");
         exit();
     }
-    $hash = password_hash($password, PASSWORD_DEFAULT);
-    mysqli_stmt_bind_param($stmt,"sssss", $username, $fname, $lname, $email, $hash);
+    //$hash = password_hash($password, PASSWORD_DEFAULT);
+    mysqli_stmt_bind_param($stmt,"sssss", $username, $fname, $lname, $email, $password);
     mysqli_stmt_execute($stmt);
     echo"registration successful";
     mysqli_stmt_close($stmt);
@@ -73,19 +73,25 @@ function loginuser($conn,$username,$password){
         header('location:../login.php?error=logininvalid1');
         exit();
     }
-    $hash = $uidexist["pwd"];
-    $checkpwd = password_verify($password, $hash);
-
-    if ($checkpwd === false) {
+    $stored_password = $uidexist["pwd"];
+    if ( $stored_password!=$password) {
         header("location:../login.php?error=logininvalid2");
         exit();
-    }else if ($checkpwd === true) {
+    }else  {
 
         session_start();
         $_SESSION["uid"] = $uidexist["ID"];
         $_SESSION["username"] = $uidexist["username"];
+
+        //coockies   
+        $cookie_name = "user";
+        $cookie_value = $_SESSION["username"];
+        setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 30 days expiration
+    
         header('location:../welcome.php');
         exit();
     }
 
 }
+//reset password
+
