@@ -27,7 +27,7 @@
     </div>
     <div class="content" id="content">
         <!-- Content Goes Here -->
-        <h1 style="color: white;">Heshan Perera</h1>
+        <h1 style="color: white;">Manager Dashboard</h1>
         <p>Select an option from the menu to get started.</p>
     </div>
     <div id="contentload">
