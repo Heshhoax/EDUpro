@@ -31,6 +31,5 @@ if ($result->num_rows > 0) {
     // Handle case where no user was found
     echo "<p>No user found for the provided email.</p>";
 }
-
 $conn->close();
 ?>
