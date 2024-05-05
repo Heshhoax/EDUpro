@@ -1,0 +1,47 @@
+/* CSS for header */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* CSS for slideshow */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/* CSS for team members section */
+#team-members {
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+/* CSS for subjects section */
+#subjects {
+    padding: 20px;
+}
+
+.team-member {
+    width: 20%; /* Adjust width as needed */
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%; /* For circular images */
+}
+
+.team-member h2 {
+    margin-top: 10px;
+}
+
+.team-member p {
+    margin-top: 10px;
+    color: #666;
+}
