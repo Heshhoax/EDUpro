@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>contact us</title>
-        <link rel="stylesheet" href="contactus.css">
+        <link rel="stylesheet" href="contactus_upasama.css">
     </head>
 
     <body>
