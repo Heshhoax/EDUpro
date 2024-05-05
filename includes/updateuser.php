@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Update user information in the database
     $sql = "UPDATE userinfo SET username='$username', fname='$fname', lname='$lname', email='$email' WHERE ID='$userID'";
     if ($conn->query($sql) === TRUE) {
-        header('location:../Heshancrud.php');
+        header('location:../Hcrud.php');
     } else {
         echo "Error updating user information: " . $conn->error;
     }
