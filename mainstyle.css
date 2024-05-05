@@ -392,3 +392,40 @@ ul li.active{
 
  
 /*End of Lecture Registration*/
+
+/*Start of Lessons */
+
+.feed{
+    background-color: white;
+    height: 80vh;
+    width: 100%;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+}
+#back{
+    color: #800080;
+    border-color: #800080;
+    border-radius: none;
+    width: 550px;
+    margin-top: 10px;
+    margin-left: 500px;
+    height: 80px;
+    font-weight: bold;
+    font-family: 'sans-serif';
+    align-items:center; 
+    text-align: left;
+}
+#video{
+    margin-top: 50px;
+    margin-left: 500px;
+}
+#send{
+    background-color: white;
+}
+#send:hover{
+    background-color: yellow;
+}
+
+
+/*End of Lessons*/
