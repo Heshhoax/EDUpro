@@ -416,9 +416,16 @@ ul li.active{
     align-items:center; 
     text-align: left;
 }
-
+#video{
+    margin-top: 50px;
+    margin-left: 500px;
+}
+#send{
+    background-color: white;
+}
 #send:hover{
     background-color: yellow;
 }
+
 
 /*End of Lessons*/
