@@ -8,7 +8,7 @@
 </head>
 <div>
 <body>
-    <?php include('heeader.php');?>
+    <?php include('header.php');?>
 <form action="inukaincludes/signlec.php" method="POST">
 <div class="log" id="side10"> 
     <h1>Lecturer Registration Form</h1>
