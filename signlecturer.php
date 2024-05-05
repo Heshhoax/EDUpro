@@ -19,8 +19,9 @@
                 <label>Email :</label> <input type="email" name="email" class="inp-reg" required>
                 <label>Enter NIC :</label><input type="text"  name="nic" class="inp-reg" required>
                 <label>Password :</label><input type="password"  name="password" class="inp-reg" required>
-                <label>Specialization :</label><input type="text"  name="Specialization" class="inp-reg" required>
-                    <select id="specialization">
+                <label>Specialization :</label> 
+                    <select id="specialization" name="Specialization" class="inp-reg"  required>
+                        <option value="specialization">Select Specialization</option>
                         <option value="ITSIT">BSc(Hons) in Information Technology Specializating in Information Technology</option>
                         <option value="ITSCSNE">BSc(Hons) in Information Technology Specializating in Computer System & Network Engineering</option>
                         <option value="ITSSE">BSc(Hons) in Information Technology Specializating in Software Engineering</option>
@@ -38,7 +39,17 @@
                 <label>Last Name :</label><input type="text"  name="lname" class="inp-reg" required><br>
                 <label>Mobile No :</label><input type="text"  name="mobileno" class="inp-reg" required><br>
                 <label>Confirmed Password :</label><input type="password" name="confirmedpassword" class="inp-reg" required><br>
-                <label>Subject :</label><input type="text"  name="Subject" class="inp-reg" required><br>
+                <label>Subject :</label>
+                <select id="Subject" name="Subject"  class="inp-reg"  required>
+                    <option value="subject">Select Subject</option>
+                    <option value="OOC"> Object Oriented Concept</option>
+                    <option value="CSNE"> Computer System & Network Engineering</option>
+                    <option value="MC">Mathematics Computing</option>
+                    <option value="SPM">Software Process Modeling</option>
+                    <option value="IP">Programming</option>
+                    <option value="CS">Comunicatin Skill</option>
+                    <option value="ISDM">Information System Identify Module</option>
+                </select>    
                 <label>D.O.B :</label><input type="date"  name="dob" class="inp-reg" required>
             </div>
                 
