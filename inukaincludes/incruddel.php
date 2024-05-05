@@ -1,14 +1,14 @@
 <?php
 
-if(isset($_GET["ID"]))
-    $deluser = $_GET['ID'];
+if(isset($_GET["L_ID"]))
+    $deluser = $_GET['L_ID'];
 
     require_once('database.php');
     
-    $query = "DELETE FROM userinfo WHERE ID='$deluser'";
+    $query = "DELETE FROM lecturerinfo WHERE L_ID='$deluser'";
     
     if (mysqli_query($conn, $query)) {
-        header("location:../Heshancrud.php");
+        header("location:../Inukacrud.php");
     } else {
         echo "Error deleting user: " . mysqli_error($conn);
     }

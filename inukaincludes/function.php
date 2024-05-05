@@ -18,14 +18,14 @@ function invalidemail($email) {
 }
 
 // Matching passwords
-function passmatch($password, $repeatpassword) {
-    $result = $password !== $repeatpassword;
+function passmatch($password, $confirmedpassword) {
+    $result = $password !== $confirmedpassword;
     return $result;
 }
 
 // Finding the existence of the same username
 function uidexist($conn, $username, $email) {
-    $sql = "SELECT * FROM userinfo WHERE username = ? OR email = ?;";
+    $sql = "SELECT * FROM lecturerinfo WHERE username = ? OR email = ?;";
     $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt, $sql)) {
         header("location:../signlecturer.html?error=stmtfailed");
@@ -45,7 +45,7 @@ function uidexist($conn, $username, $email) {
 }
 // Create lectureraccount
 function createuser($conn, $username, $fname, $lname,$gender, $email,$mobileno,$nic,$specialization, $password) {
-    $sql = "INSERT INTO userinfo (username, fname, lname,gender, email,,mobileno,nic,specialization, pwd) VALUES (?,?,?,?,?,?,?,?,?);";
+    $sql = "INSERT INTO lecturerinfo (username, fname, lname,gender, email,,mobileno,nic,specialization, password ) VALUES (?,?,?,?,?,?,?,?,?);";
     $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt, $sql)) {
         header("location:../signlecturer.html?error=stmtfailed");

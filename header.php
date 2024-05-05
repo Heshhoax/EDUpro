@@ -17,7 +17,7 @@
         <img src="images/edupro_black.png" width="150" height="60" >
         <ul class="menue">
             <li class="menue"><a href="#">Home</li></a>
-            <li class="menue"><a href="#"">Courses</li></a>
+            <li class="menue"><a href="#">Courses</li></a>
             <li class="menue"><a href="#">Lessons</li></a>
             <li class="menue"><a href="#">Contact</li></a>
             <li class="menue"><a href="#">FAQ</li></a>

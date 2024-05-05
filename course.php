@@ -26,24 +26,24 @@
          <div class="packagerow">
             <div class="packoff" id="side7">          
                  <img src="images/course1.jpg" width="200px" height="200px">
-                 <p>Platinum Credit Cards often include exclusive travel benefits like airport lounge access, concierge services, travel insurance, and lost baggage reimbursement. Platinum Credit Cards typically offer purchase protections like extended warranties, returns, refunds, and product guarantees.</p>
+                 <p>"Basic Programming Concepts: Learn the fundamentals of programming languages and problem-solving techniques to teach beginners effectively."</p>
                  <button class="buy1" id="btn-buy1">Course 1</button>
             </div>
             <div class="packoff" id="side7">  
                  <img src="images/course2.jpg " width="200px" height="200px">
-                 <p>Gold is seen as a hedge against inflation and a store of value through market ups and downs. Investors can hold physical gold directly in the form of coins, bullion, or jewelry; or indirectly via mutual funds, exchange-traded funds (ETFs), gold derivatives, or gold-mining stocks.</p>
+                 <p>"Creating Websites with HTML/CSS: Understand the basics of web development to teach students how to design and style web pages."</p>
                  <button class="buy1" id="btn-buy1">Course 2</button>
                  
             </div>
             <div class="packoff" id="side7">  
                  <img src="images/course3.jpg " width="200px" height="200px">
-                 <p>Silver is a relatively soft, shiny metal. It tarnishes slowly in air as sulfur compounds react with the surface forming black silver sulfide. Sterling silver contains 92.5% silver. The rest is copper or some other metal.</p>
+                 <p>"Managing Data with Databases: Explore the essentials of database management and SQL queries to help students organize and retrieve information efficiently."</p>
                  <button class="buy1" id="btn-buy1">Course 3</button>    
             </div>
 
             <div class="packoff" id="side7">  
                 <img src="images/course4.jpeg " width="200px" height="200px">
-                <p>Silver is a relatively soft, shiny metal. It tarnishes slowly in air as sulfur compounds react with the surface forming black silver sulfide. Sterling silver contains 92.5% silver. The rest is copper or some other metal.</p>
+                <p>"Essential Cybersecurity Skills: Gain insights into cybersecurity principles to guide students in understanding threats and implementing protective measures."</p>
                 <button class="buy1" id="btn-buy1">Course 4</button>    
            </div>
          </div>

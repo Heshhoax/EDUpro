@@ -11,6 +11,7 @@
     $specialization=$_POST["specialization"];
     $subject = $_POST["subject"];
     $dob = $_POST["dob"];
+    $Experiences = $_POST["Experiences"];
     
     require_once('database.php');
     require_once('function.php');
