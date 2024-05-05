@@ -407,5 +407,8 @@ ul li.active{
     align-items:center; 
     text-align: left;
 }
+#send{
+    background: transparent;
+}
 
 /*End of Lessons*/
