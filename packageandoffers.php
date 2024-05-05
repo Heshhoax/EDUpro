@@ -11,45 +11,46 @@
     <?php include('heeader.php');?>
     
     <div id="side0">
-        <h3>Packages And Offers</h3>
+        <h2>Packages And Offers</h2>
 
         <div class="packagerow">
              <!--PLATINUM-->
             <div id="side1">
                 <legend><h5>PLATINUM</h5></legend><img src="images/platinum.jpeg" width="200px" height="200px">
-                <h3> - Fee: Rs. 25,000/- </h3>
-                <p>  - Duration: 4 months<p>
-                <p>  - Features:</P>
-                <p>  - Extra practical sessions for hands-on learning.</p>
-                <p>  - Quick-paced sessions to accelerate your progress.</p>
-                <p>  - Access to an extensive online library for comprehensive resources.</p>
-                <p>  - Personalized mentorship for tailored guidance and support.</p>
+                <h3>Rs. 25,000/- </h3>
+                <p>Duration: 4 Months<p>
+                <h3 style="text-align: left; margin-left: 10px;">Features:</h3>     
+                <h4>Extra practical sessions for hands-on learning.</h4>
+                <h5>Quick-paced sessions to accelerate your progress.</h5>
+                <h5>Access to an extensive online library for comprehensive resources.</h5>
+                <h5>Personalized mentorship for tailored guidance and support.</h5>
+                      
                 <button class="buy" id="btn-buy">BUY</button>
             </div>
              <!--GOLD-->
             <div id="side1">
                 </h5><legend><h5>GOLD</h5></legend><img src="images/gold.jpeg" width="200px" height="200px">
-                <p> - Fee: Rs. 20,000/-
-                    - Duration: 5 months
-                    - Features:
-                    - Comprehensive curriculum spread over a slightly longer duration.
-                    - Access to the online library for research and reference.
-                    - Interactive sessions with experienced instructors.
-                    - Regular assessments to track progress and ensure mastery.
-                </p>
+                <h3>Rs. 20,000/- </h3>
+                <p>Duration: 5 Months<p>
+                <h3 style="text-align: left; margin-left: 10px;">Features:</h3> 
+                <h4>Interactive sessions with experienced instructors.</h4>    
+                <h5>Comprehensive curriculum spread over a slightly longer duration.</h5>
+                <h5>Access to the online library for research and reference.</h5>
+                <h5>Regular assessments to track progress and ensure mastery.</h5>
+               
                 <button class="buy" id="btn-buy">BUY</button>
             </div>
              <!--SILVER-->
             <div id="side1">
                 <legend><h5>SILVER</h5></legend><img src="images/silver.jpg" width="200px" height="200px">
-                <p> - Fee: Rs. 15,000/-
-                    - Duration: 6 months
-                    - Features:
-                    - Flexible timetable suited for a longer-term commitment.
-                    - Full access to the online library for continuous learning.
-                    - Engaging webinars and discussion forums to enhance learning.
-                    - Affordable option for those seeking a comprehensive training experience on a budget.
-                </p>
+                <h3>Rs. 15,000/- </h3>
+                <p>Duration: 6 Months<p>
+                <h3 style="text-align: left; margin-left: 10px;">Features:</h3>
+                <h4>Budget-friendly option for thorough training experience.</h4>     
+                <h5>Flexible timetable suited for a longer-term commitment.</h5>
+                <h5>Full access to the online library for continuous learning.</h5>
+                <h5>Engaging webinars and discussion forums to enhance learning.</h5>
+                
                 <button class="buy" id="btn-buy">BUY</button>
             </div>
         </div>
