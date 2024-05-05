@@ -392,3 +392,24 @@ ul li.active{
 
  
 /*End of Lecture Registration*/
+
+/*Start of Lessons */
+
+#back{
+    color: #800080;
+    border-color: #800080;
+    border-radius: none;
+    width: 550px;
+    margin-top: 10px;
+    margin-left: 500px;
+    height: 80px;
+    font-weight: bold;
+    font-family: 'sans-serif';
+    align-items:center; 
+    text-align: left;
+}
+#send{
+    background: transparent;
+}
+
+/*End of Lessons*/
