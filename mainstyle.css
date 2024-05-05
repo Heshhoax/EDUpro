@@ -395,6 +395,14 @@ ul li.active{
 
 /*Start of Lessons */
 
+.feed{
+    background-color: white;
+    height: 80vh;
+    width: 100%;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+}
 #back{
     color: #800080;
     border-color: #800080;
@@ -408,8 +416,9 @@ ul li.active{
     align-items:center; 
     text-align: left;
 }
-#send{
-    background: transparent;
+
+#send:hover{
+    background-color: yellow;
 }
 
 /*End of Lessons*/
