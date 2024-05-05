@@ -2,11 +2,11 @@
 
 require_once('database.php');
 // Check if the ID parameter is set in the URL
-if(isset($_GET['ID'])) {
+if(isset($_GET['L_ID'])) {
     // Sanitize the ID parameter to prevent SQL injection
-    $userID = $_GET['ID'];
+    $userID = $_GET['L_ID'];
     // Fetch the user information from the database
-    $sql = "SELECT * FROM userinfo WHERE ID = '$userID'";
+    $sql = "SELECT * FROM lecturerinfo WHERE L_ID = '$userID'";
     $result = $conn->query($sql);
     
     if($result->num_rows == 1) {
@@ -16,7 +16,7 @@ if(isset($_GET['ID'])) {
         // Display a form to edit the user information
         echo "<h2>Edit Lecturer </h2>";
         echo "<form action='updateuser.php' method='post'>";
-        echo "<input type='hidden' name='userID' value='" . $userData['ID'] . "'>";
+        echo "<input type='hidden' name='userID' value='" . $userData['L_ID'] . "'>";
         echo "Username: <input type='text' name='username' value='" . $userData['username'] . "'><br>";
         echo "First Name: <input type='text' name='fname' value='" . $userData['fname'] . "'><br>";
         echo "Last Name: <input type='text' name='lname' value='" . $userData['lname'] . "'><br>";
