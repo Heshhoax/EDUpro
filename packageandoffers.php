@@ -17,14 +17,13 @@
              <!--PLATINUM-->
             <div id="side1">
                 <legend><h5>PLATINUM</h5></legend><img src="images/platinum.jpeg" width="200px" height="200px">
-                <p>  - Fee: Rs. 25,000/-
-                     - Duration: 4 months
-                     - Features:
-                     - Extra practical sessions for hands-on learning.
-                     - Quick-paced sessions to accelerate your progress.
-                     - Access to an extensive online library for comprehensive resources.
-                     - Personalized mentorship for tailored guidance and support.
-                </p>
+                <h3> - Fee: Rs. 25,000/- </h3>
+                <p>  - Duration: 4 months<p>
+                <p>  - Features:</P>
+                <p>  - Extra practical sessions for hands-on learning.</p>
+                <p>  - Quick-paced sessions to accelerate your progress.</p>
+                <p>  - Access to an extensive online library for comprehensive resources.</p>
+                <p>  - Personalized mentorship for tailored guidance and support.</p>
                 <button class="buy" id="btn-buy">BUY</button>
             </div>
              <!--GOLD-->
