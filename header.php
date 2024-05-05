@@ -24,7 +24,6 @@
             <li class="menue"><a href="#">My Profile</li></a>
         </ul>
     </header>
-    
     </div>
 </body>
 </html>
