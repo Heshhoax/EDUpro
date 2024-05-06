@@ -26,7 +26,7 @@ if(isset($_POST['submit'])){
 <meta charset="utf-8">
 <meta name="viewpoint" content = width-device-width, initial-scale=1, shrink-to-fit="no">
 <title>Exam portal</title>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="dinithiexam.css">
 </head>
 <body>
     <h2>Exam portal</h2><br>
