@@ -13,7 +13,7 @@ $coursedata=$result->fetch_assoc();
 
 echo "<h2>Edit Course Materials</h2>";
 echo "<form action='updatecourse.php' method='post'>";
-echo "<input type='int' name='C_ID' value='".$coursedata['C_ID']."'>";
+echo "<input type='int'  name='C_ID' value='".$coursedata['C_ID']."'>";
 echo "<input type='text' name='Title' value='".$coursedata['Title']."'><br>";
 echo "<input type='text' name='Description' value='".$coursedata['Description']."'><br>";
 echo "<input type='file' name='Image' value='".$coursedata['Image']."'><br>";
