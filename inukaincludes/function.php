@@ -44,8 +44,8 @@ function lidexist($conn, $username, $email) {
     
 }
 // Create lectureraccount
-function createlecturer($username, $fname, $lname, $gender,  $email, $mobileno,$nic, $password,$confirmedpassword,$specialization,$subject,$dob,$Experience) {
-    $sql = "INSERT INTO lecturerinfo (username,fname,lname,gender,email,mobileno,nic,password,confirmedpassword,specialization,subject,dob,Experience ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?);";
+function createlecturer($username, $fname, $lname, $gender,  $email, $mobileno,$nic, $password,$confirmedpassword,$specialization,$subject,$dob,$Experiences) {
+    $sql = "INSERT INTO lecturerinfo (username,fname,lname,gender,email,mobileno,nic,password,confirmedpassword,specialization,subject,dob,Experiences ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?);";
     $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt, $sql)) {
         header("location:../signlecturer.html?error=stmtfailed");
