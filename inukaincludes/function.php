@@ -24,7 +24,7 @@ function passmatch($password, $confirmedpassword) {
 }
 
 // Finding the existence of the same username
-function uidexist($conn, $username, $email) {
+function lidexist($conn, $username, $email) {
     $sql = "SELECT * FROM lecturerinfo WHERE username = ? OR email = ?;";
     $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt, $sql)) {
@@ -44,7 +44,7 @@ function uidexist($conn, $username, $email) {
     
 }
 // Create lectureraccount
-function createuser($conn, $username, $fname, $lname,$gender, $email,$mobileno,$nic,$specialization, $password) {
+function createlecturer($conn, $username, $fname, $lname,$gender, $email,$mobileno,$nic,$specialization, $password) {
     $sql = "INSERT INTO lecturerinfo (username, fname, lname,gender, email,,mobileno,nic,specialization, password ) VALUES (?,?,?,?,?,?,?,?,?);";
     $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt, $sql)) {
@@ -68,7 +68,7 @@ function emptyinputslogin($username, $password) {
 
 //LOGIN USER
 function loginuser($conn,$username,$password){
-    $uidexist=lidexist($conn, $username, $username);
+    $lidexist=lidexist($conn, $username, $username);
     if ($lidexist === false) {
         header('location:../login.php?error=logininvalid1');
         exit();

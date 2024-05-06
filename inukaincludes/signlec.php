@@ -44,5 +44,5 @@
         exit('');
     }
     // If all checks pass, proceed to create the user
-    createuser($username, $fname, $lname, $gender,  $nic, $email, $mobileno, $password);
+    createlecturer($username, $fname, $lname, $gender,  $nic, $email, $mobileno, $password);
     
