@@ -221,10 +221,16 @@
     justify-content: center;
    
 }
+#para{
+    
+    margin-top: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    color: #800080;
+    min-height: 110px;
+}
 .buy1{
     margin-top: 30px;
-}
-#btn-buy1{
     width: 100px;
     height: 20px;
     color: white;
@@ -233,7 +239,7 @@
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
 }
-#btn-buy1:hover
+.buy1:hover
 {
     
     color: black;
