@@ -11,11 +11,11 @@ if(isset($_GET['L_ID'])) {
     
     if($result->num_rows == 1) {
         // Fetch the user data
-        $userData = $result->fetch_assoc();
+        $lecturerData = $result->fetch_assoc();
         
         // Display a form to edit the user information
         echo "<h2>Edit Lecturer </h2>";
-        echo "<form action='updateuser.php' method='post'>";
+        echo "<form action='updatelecturer.php' method='post'>";
         echo "<input type='hidden' name='L_ID' value='" . $lecturerrData['L_ID'] . "'>";
         echo "Username: <input type='text' name='username' value='" . $lecturerData['username'] . "'><br>";
         echo "First Name: <input type='text' name='fname' value='" . $lecturerData['fname'] . "'><br>";
