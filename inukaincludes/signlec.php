@@ -7,7 +7,6 @@
     $mobileno=$_POST["mobileno"];
     $nic=$_POST["nic"];
     $password = $_POST["password"];
-    $confirmedpassword = $_POST["confirmedpassword"];
     $specialization = $_POST["specialization"];
     $subject = $_POST["subject"];
     $dob = $_POST["dob"];
@@ -16,7 +15,7 @@
     require_once('database.php');
     require_once('function.php');
     
-    $emptyinputs = emptyinputsignup($username, $fname, $lname, $gender,  $email, $mobileno,$nic, $password,$confirmedpassword,$specialization,$subject,$dob,$Experiences);
+    $emptyinputs = emptyinputsignup($username, $fname, $lname, $gender,  $email, $mobileno,$nic, $password,$specialization,$subject,$dob,$Experiences);
     $invalidusername = invalidusername($username);      
     $invalidemail = invalidemail($email);
     $passmatch = passmatch($password,  $confirmedpassword);
