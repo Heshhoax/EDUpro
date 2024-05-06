@@ -1,4 +1,20 @@
+<style>
+    table{
+    border-collapse: collapse;
+    width: 100%;
+}
+th,td{
+    padding:8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th{
+    background-color: #800080;
+    color: white;
+}
+</style>
 <?php
+
 echo"
 <table>
 <thead>
@@ -11,6 +27,7 @@ echo"
 </thead>
 </tbody>
 ";
+
 
 require_once('database1.php');
 

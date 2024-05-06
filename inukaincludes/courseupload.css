@@ -15,7 +15,7 @@ input[type="file"] {
 input[type="text"] {
     margin-bottom: 20px;
 }
-#la{
+.la{
     color: #800080;
     text-align: left;
 }
@@ -26,7 +26,7 @@ input[type="text"] {
     width: 90vh;
 }
 
-input[type="submit"] {
+#sub {
     background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
@@ -35,8 +35,8 @@ input[type="submit"] {
     border-radius: 4px;
     cursor: pointer;
 }
-input[type="submit"]:hover {
-    background-color: #45a049;
+#sub:hover {
+    background-color: yellowgreen;
 }
 .cour{
     background-color: white;

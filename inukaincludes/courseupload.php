@@ -8,24 +8,24 @@
     <link rel='stylesheet' type='text/css' media='screen' href='courseupload.css'>
 </head>
 <body>
-    <form action="" method="post">
+    <form action="include.php" method="post">
         
         <div class="cour">
             <h1>Lecturer Materials Upload</h1>
             <div>
-                <label id="la">Choose File to Upload:</label>
+                <label class="la">Choose File to Upload:</label>
                 <input type="file" id="file" name="file" accept=".pdf,.doc,.docx">
             </div>
             <div>
-                <label id="la">Title:</label>
+                <label class="la">Title:</label>
                 <input type="text" id="title" name="title" required>
             </div>
             <div>
-                <label id="la">Description:</label><br>
+                <label class="la">Description:</label><br>
                 <textarea id="description" name="description" rows="'4" cols="50" required></textarea>
              </div>
             <div>
-                 <input type="submit" value="Upload">
+                 <button type="submit" id="sub" name="submit">Upload</button>
             </div>
         </div>     
     </form>

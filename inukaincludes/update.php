@@ -1,3 +1,4 @@
+
 <?php
 
 require_once('database1.php');
@@ -16,7 +17,7 @@ echo "<input type='int' name='C_ID' value='".$coursedata['C_ID']."'>";
 echo "<input type='text' name='Title' value='".$coursedata['Title']."'><br>";
 echo "<input type='text' name='Description' value='".$coursedata['Description']."'><br>";
 echo "<input type='file' name='Image' value='".$coursedata['Image']."'><br>";
-echo "<input type='submit' value='update'>";
+echo "<button type='submit' name='submit'>submit</button>";
 echo "</form>";
 
 $conn->close();
