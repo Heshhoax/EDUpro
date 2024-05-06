@@ -1,10 +1,16 @@
 <?php
+// Establish database connection
+$conn = new mysqli($serverName,$dbUsername,$dbPassword,$dbName);
 
-//create
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+// Create operation
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['create'])) {
     // Retrieve form data
-    $fullName = $_POST['full_name'];
+    $fullName = $_POST['fullName'];
     $email = $_POST['email'];
     $address = $_POST['address'];
     $city = $_POST['city'];
@@ -12,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $zipCode = $_POST['zip_code'];
 
     // SQL query to insert data
-    $sql = "INSERT INTO billing_addresses (full_name, email, address, city, state, zip_code)
+    $sql = "INSERT INTO billingAddresses (fName, email, address, city, state, zipCode)
             VALUES ('$fullName', '$email', '$address', '$city', '$state', '$zipCode')";
 
     if ($conn->query($sql) === TRUE) {
@@ -22,8 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
-//Read
-
+// Read operation
 $sql = "SELECT * FROM billing_addresses";
 $result = $conn->query($sql);
 
@@ -35,12 +40,11 @@ if ($result->num_rows > 0) {
     echo "0 results";
 }
 
-//Update
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+// Update operation
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['update'])) {
     // Retrieve form data
     $id = $_POST['id'];
-    $fullName = $_POST['full_name'];
+    $fullName = $_POST['fullName'];
     $email = $_POST['email'];
     $address = $_POST['address'];
     $city = $_POST['city'];
@@ -59,10 +63,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
-
-//Delete
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+// Delete operation
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete'])) {
     // Retrieve id of the record to be deleted
     $id = $_POST['id'];
 
@@ -75,4 +77,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Error deleting record: " . $conn->error;
     }
 }
+
+$conn->close();
 ?>
