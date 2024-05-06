@@ -8,7 +8,7 @@
     $mobileno=$_POST["mobileno"];
     $password = $_POST["password"];
     $confirmedpassword = $_POST["confirmedpassword"];
-    $specialization=$_POST["specialization"];
+    $specialization = $_POST["specialization"];
     $subject = $_POST["subject"];
     $dob = $_POST["dob"];
     $Experiences = $_POST["Experiences"];
@@ -44,5 +44,5 @@
         exit('');
     }
     // If all checks pass, proceed to create the user
-    createlecturer($username, $fname, $lname, $gender,  $nic, $email, $mobileno, $password);
+    createlecturer($username, $fname, $lname, $gender,  $nic, $email, $mobileno, $password,$confirmedpassword,$specialization,$subject,$dob,$Experiences);
     
