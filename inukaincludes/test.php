@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST['password'];
 
 
-    $query = "INSERT INTO users (username, password) VALUES ('$username', '$password')";
+    $query = "INSERT INTO lecturerinfo (username, password) VALUES ('$username', '$password')";
     
 
     if (mysqli_query($conn, $query)) {

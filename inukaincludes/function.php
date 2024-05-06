@@ -1,7 +1,7 @@
 <?php
 // Checking if lecturer fills all the entries
-function emptyinputsignup($username, $fname, $lname, $gender,  $nic, $email, $mobileno, $password) {
-    $result = empty($username) || empty($fname) || empty($lname) || empty($gender) || empty($nic)  || empty($email) || empty($mobileno) || empty($password);
+function emptyinputsignup($username, $fname, $lname, $gender,  $email, $mobileno, $nic, $password) {
+    $result = empty($username) || empty($fname) || empty($lname) || empty($gender)   || empty($email) || empty($mobileno) || empty($nic) || empty($password);
     return $result; 
 }
 
@@ -24,7 +24,7 @@ function passmatch($password, $confirmedpassword) {
 }
 
 // Finding the existence of the same username
-function uidexist($conn, $username, $email) {
+function lidexist($conn, $username, $email) {
     $sql = "SELECT * FROM lecturerinfo WHERE username = ? OR email = ?;";
     $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt, $sql)) {
@@ -44,8 +44,8 @@ function uidexist($conn, $username, $email) {
     
 }
 // Create lectureraccount
-function createuser($conn, $username, $fname, $lname,$gender, $email,$mobileno,$nic,$specialization, $password) {
-    $sql = "INSERT INTO lecturerinfo (username, fname, lname,gender, email,,mobileno,nic,specialization, password ) VALUES (?,?,?,?,?,?,?,?,?);";
+function createlecturer($username, $fname, $lname, $gender,  $email, $mobileno,$nic, $password,$confirmedpassword,$specialization,$subject,$dob,$Experiences) {
+    $sql = "INSERT INTO lecturerinfo (username,fname,lname,gender,email,mobileno,nic,password,confirmedpassword,specialization,subject,dob,Experiences ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?);";
     $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt, $sql)) {
         header("location:../signlecturer.html?error=stmtfailed");
@@ -68,12 +68,12 @@ function emptyinputslogin($username, $password) {
 
 //LOGIN USER
 function loginuser($conn,$username,$password){
-    $uidexist=uidexist($conn, $username, $username);
-    if ($uidexist === false) {
+    $lidexist=lidexist($conn, $username, $username);
+    if ($lidexist === false) {
         header('location:../login.php?error=logininvalid1');
         exit();
     }
-    $hash = $uidexist["pwd"];
+    $hash = $lidexist["password"];
     $checkpwd = password_verify($password, $hash);
 
     if ($checkpwd === false) {
@@ -82,8 +82,8 @@ function loginuser($conn,$username,$password){
     }else if ($checkpwd === true) {
 
         session_start();
-        $_SESSION["uid"] = $uidexist["userid"];
-        $_SESSION["username"] = $uidexist["username"];
+        $_SESSION["lid"] = $lidexist["lecturerid"];
+        $_SESSION["username"] = $lidexist["username"];
         header('location:../welcome.php');
         exit();
     }
