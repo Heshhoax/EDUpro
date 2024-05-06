@@ -20,7 +20,7 @@
     $invalidusername = invalidusername($username);      
     $invalidemail = invalidemail($email);
     $passmatch = passmatch($password,  $confirmedpassword);
-    $uidexist = uidexist($conn, $username, $email); 
+    $liddexist = lidexist($conn, $username, $email); 
    
     if ($emptyinputs !== false) {
         header('location:../signlecturer.php?error=emptyinput');
@@ -39,7 +39,7 @@
         exit('');
     }
    
-    if ($uidexist !== false) {
+    if ($lidexist !== false) {
         header('location:../signlecturer.php?error=uidexist');
         exit('');
     }

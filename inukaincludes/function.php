@@ -68,12 +68,12 @@ function emptyinputslogin($username, $password) {
 
 //LOGIN USER
 function loginuser($conn,$username,$password){
-    $uidexist=uidexist($conn, $username, $username);
-    if ($uidexist === false) {
+    $uidexist=lidexist($conn, $username, $username);
+    if ($lidexist === false) {
         header('location:../login.php?error=logininvalid1');
         exit();
     }
-    $hash = $uidexist["pwd"];
+    $hash = $lidexist["password"];
     $checkpwd = password_verify($password, $hash);
 
     if ($checkpwd === false) {
@@ -82,8 +82,8 @@ function loginuser($conn,$username,$password){
     }else if ($checkpwd === true) {
 
         session_start();
-        $_SESSION["uid"] = $uidexist["userid"];
-        $_SESSION["username"] = $uidexist["username"];
+        $_SESSION["lid"] = $lidexist["lecturerid"];
+        $_SESSION["username"] = $lidexist["username"];
         header('location:../welcome.php');
         exit();
     }
