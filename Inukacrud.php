@@ -43,11 +43,20 @@ echo "<table>
 
  while($row=$result->fetch_assoc()){
     echo "<tr>
-    <td>{$row["ID"]}</td>
+    <td>{$row["L_ID"]}</td>
     <td>{$row["username"]}</td>
     <td>{$row["fname"]}</td>
     <td>{$row["lname"]}</td>
+    <td>{$row["gender"]}</td>
     <td>{$row["email"]}</td>
+    <td>{$row["mobileno"]}</td>
+    <td>{$row["nic"]}</td>
+    <td>{$row["password"]}</td>
+    <td>{$row["confirmedpassword"]}</td>
+    <td>{$row["specialization"]}</td>
+    <td>{$row["subject"]}</td>
+    <td>{$row["dob"]}</td>
+    <td>{$row["Experiences"]}</td>
             <td>
             <a class='btn' href='includes/crudedit.php?ID={$row['ID']}'>Edit</a>
             <a class='btn btn-danger' href='includes/cruddel.php?ID={$row['ID']}'>Delete</a>
