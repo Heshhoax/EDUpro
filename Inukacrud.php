@@ -58,8 +58,8 @@ echo "<table>
     <td>{$row["dob"]}</td>
     <td>{$row["Experiences"]}</td>
             <td>
-            <a class='btn' href='inukaincludes/crudedit.php?ID={$row['ID']}'>Edit</a>
-            <a class='btn btn-danger' href='inukaincludes/cruddel.php?ID={$row['ID']}'>Delete</a>
+            <a class='btn' href='inukaincludes/crudedit.php?ID={$row['L_ID']}'>Edit</a>
+            <a class='btn btn-danger' href='inukaincludes/cruddel.php?ID={$row['L_ID']}'>Delete</a>
             </td>
         </tr>";
  }
