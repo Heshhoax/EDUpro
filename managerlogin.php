@@ -66,7 +66,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <form action="includes/logininc.php" method="POST">
+        <form action="includes/managerverify.php" method="POST">
         <h1>Manager Login</h1>
             <div class="input-box">
                 <input type="text" placeholder="Enter Username/Email" name="uid">
@@ -98,6 +98,7 @@
         showPasswordCheckbox.addEventListener('change', function() {
             if (this.checked) {
                 passwordInput.type = 'text'; // Show password
+
             } else {
                 passwordInput.type = 'password'; // Hide password
             }
