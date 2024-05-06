@@ -1,7 +1,7 @@
 <?php
 // Checking if lecturer fills all the entries
-function emptyinputsignup($username, $fname, $lname, $gender,  $nic, $email, $mobileno, $password) {
-    $result = empty($username) || empty($fname) || empty($lname) || empty($gender) || empty($nic)  || empty($email) || empty($mobileno) || empty($password);
+function emptyinputsignup($username, $fname, $lname, $gender,  $email, $mobileno, $nic, $password) {
+    $result = empty($username) || empty($fname) || empty($lname) || empty($gender)   || empty($email) || empty($mobileno) || empty($nic) || empty($password);
     return $result; 
 }
 
@@ -44,8 +44,8 @@ function lidexist($conn, $username, $email) {
     
 }
 // Create lectureraccount
-function createlecturer($conn, $username, $fname, $lname,$gender, $email,$mobileno,$nic,$specialization, $password) {
-    $sql = "INSERT INTO lecturerinfo (username, fname, lname,gender, email,,mobileno,nic,specialization, password ) VALUES (?,?,?,?,?,?,?,?,?);";
+function createlecturer($username, $fname, $lname, $gender,  $email, $mobileno,$nic, $password,$confirmedpassword,$specialization,$subject,$dob,$Experience) {
+    $sql = "INSERT INTO lecturerinfo (username,fname,lname,gender,email,mobileno,nic,password,confirmedpassword,specialization,subject,dob,Experience ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?);";
     $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt, $sql)) {
         header("location:../signlecturer.html?error=stmtfailed");

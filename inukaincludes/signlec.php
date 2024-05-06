@@ -3,9 +3,9 @@
     $fname = $_POST["fname"];
     $lname = $_POST["lname"];
     $gender=$_POST["gender"];
-    $nic=$_POST["nic"];
     $email = $_POST["email"];
     $mobileno=$_POST["mobileno"];
+    $nic=$_POST["nic"];
     $password = $_POST["password"];
     $confirmedpassword = $_POST["confirmedpassword"];
     $specialization = $_POST["specialization"];
@@ -16,7 +16,7 @@
     require_once('database.php');
     require_once('function.php');
     
-    $emptyinputs = emptyinputsignup($username, $fname, $lname, $gender,  $nic, $email, $mobileno, $password,$confirmedpassword,$specialization,$subject,$dob,$Experiences);
+    $emptyinputs = emptyinputsignup($username, $fname, $lname, $gender,  $email, $mobileno,$nic, $password,$confirmedpassword,$specialization,$subject,$dob,$Experiences);
     $invalidusername = invalidusername($username);      
     $invalidemail = invalidemail($email);
     $passmatch = passmatch($password,  $confirmedpassword);
@@ -44,5 +44,5 @@
         exit('');
     }
     // If all checks pass, proceed to create the user
-    createlecturer($username, $fname, $lname, $gender,  $nic, $email, $mobileno, $password,$confirmedpassword,$specialization,$subject,$dob,$Experiences);
+    createlecturer($username, $fname, $lname, $gender,  $email, $mobileno,$nic, $password,$confirmedpassword,$specialization,$subject,$dob,$Experiences);
     
