@@ -13,7 +13,7 @@
 
 <div class="container">
 
-    <form action="">
+    <form method="POST" action="paymentcrud.php">
 
         <div class="row">
 
@@ -28,7 +28,7 @@
                 
                 <div class="inputBox">
                     <span>email :</span>
-                    <input type="email" placeholder="example@example.com">
+                    <input type="email" placeholder="saman@gmail.com">
                 </div>
                 <div class="inputBox">
                     <span>address :</span>
@@ -38,7 +38,7 @@
                 <span>city :</span>
                     <input type="text" placeholder="Colombo">
                 </div>
-
+                
                 <div class="flex">
                     <div class="inputBox">
                         <span>state :</span>
