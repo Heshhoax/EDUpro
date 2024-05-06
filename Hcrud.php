@@ -1,3 +1,15 @@
+<?php
+require'includes/database.php';
+session_start();
+$id=$_SESSION['uid'];
+$name=$_SESSION['username'];
+
+$sql="SELECT pp FROM userdp WHERE ID=$id";
+$result=$conn->query($sql);
+$row=$result->fetch_assoc();
+$displaypicture=$row['pp'];
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,9 +23,9 @@
     <div class="sidebar">
         <div class="profile">
             <div class="profile-picture">
-                <img src="profile-picture.jpg" alt="Profile Picture">
+                <img src=<?php echo $displaypicture; ?> alt="Profile Picture">
             </div>
-            <h3>Heshan P</h3>
+            <h3><?php echo $name; ?></h3>
             <p>Manager</p>
         </div>
         <ul class="menu">

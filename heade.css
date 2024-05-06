@@ -1,0 +1,67 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #800080;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.header1 {
+    background-color: #800080;
+    padding: 20px;
+    transition-delay: 3s;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+.menu li:hover{
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: plum;
+    color: #000000;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menu li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.button:hover {
+    background-color: #45a049;
+}
