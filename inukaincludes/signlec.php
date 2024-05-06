@@ -16,7 +16,7 @@
     require_once('database.php');
     require_once('function.php');
     
-    $emptyinputs = emptyinputsignup($username, $fname, $lname, $gender,  $nic, $email, $mobileno, $password);
+    $emptyinputs = emptyinputsignup($username, $fname, $lname, $gender,  $nic, $email, $mobileno, $password, $specialization, $subject, $dob, $Experiences);
     $invalidusername = invalidusername($username);      
     $invalidemail = invalidemail($email);
     $passmatch = passmatch($password,  $confirmedpassword);

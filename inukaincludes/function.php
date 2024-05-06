@@ -44,8 +44,8 @@ function uidexist($conn, $username, $email) {
     
 }
 // Create lectureraccount
-function createuser($conn, $username, $fname, $lname,$gender, $email,$mobileno,$nic,$specialization, $password) {
-    $sql = "INSERT INTO lecturerinfo (username, fname, lname,gender, email,,mobileno,nic,specialization, password ) VALUES (?,?,?,?,?,?,?,?,?);";
+function createuser($conn, $username, $fname, $lname,$gender, $email,$mobileno,$nic, $password,$confirmedpassword,$specialization, $subject, $dob, $Experiences) {
+    $sql = "INSERT INTO lecturerinfo (username, fname, lname,gender, email,,mobileno,nic, password ,confirmedpassword,specialization,subject,dob,Experiences) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?);";
     $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt, $sql)) {
         header("location:../signlecturer.html?error=stmtfailed");
