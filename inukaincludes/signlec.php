@@ -16,11 +16,11 @@
     require_once('database.php');
     require_once('function.php');
     
-    $emptyinputs = emptyinputsignup($username, $fname, $lname, $gender,  $nic, $email, $mobileno, $password);
+    $emptyinputs = emptyinputsignup($username, $fname, $lname, $gender,  $nic, $email, $mobileno, $password,$confirmedpassword,$specialization,$subject,$dob,$Experiences);
     $invalidusername = invalidusername($username);      
     $invalidemail = invalidemail($email);
     $passmatch = passmatch($password,  $confirmedpassword);
-    $liddexist = lidexist($conn, $username, $email); 
+    $lidexist = lidexist($conn, $username, $email); 
    
     if ($emptyinputs !== false) {
         header('location:../signlecturer.php?error=emptyinput');
