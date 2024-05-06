@@ -51,6 +51,10 @@ else{
             <li><a href="#">Contact</a></li>
             <li><a href="#">FAQ</a></li>
             <li><a href="uploaddp.php">My Profile</a></li>
+            <li ><a href="managerlogin.php">Manager</a></li>
+            <li><a href="adminlogin.php">Admin</a></li>
+            <li><a href="examinerlogin.php">Examiner</a></li>
+            <li><a href="lecturerlogin.php">Lecturer</a></li>
         </ul>
     </div>
 </body>
