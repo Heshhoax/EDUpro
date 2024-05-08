@@ -1,44 +1,68 @@
 <?php
-
 require_once('database.php');
-// Check if the ID parameter is set in the URL
-if(isset($_GET['L_ID'])) {
-    // Sanitize the ID parameter to prevent SQL injection
-    $userID = $_GET['L_ID'];
-    // Fetch the user information from the database
-    $sql = "SELECT * FROM lecturerinfo WHERE L_ID = '$lecturerID'";
-    $result = $conn->query($sql);
-    
-    if($result->num_rows == 1) {
-        // Fetch the user data
-        $lecturerData = $result->fetch_assoc();
-        
-        // Display a form to edit the user information
-        echo "<h2>Edit Lecturer </h2>";
-        echo "<form action='updatelecturer.php' method='post'>";
-        echo "<input type='hidden' name='L_ID' value='" . $lecturerrData['L_ID'] . "'>";
-        echo "Username: <input type='text' name='username' value='" . $lecturerData['username'] . "'><br>";
-        echo "First Name: <input type='text' name='fname' value='" . $lecturerData['fname'] . "'><br>";
-        echo "Last Name: <input type='text' name='lname' value='" . $lecturerData['lname'] . "'><br>";
-        echo "Gender : <input type='text' name='gender' value='" . $lecturerData['gender'] . "'><br>";
-        echo "Email: <input type='email' name='email' value='" . $lecturerData['email'] . "'><br>";
-        echo "Mobile No: <input type='text' name='mobileno' value='" . $lecturerData['mobileno'] . "'><br>";
-        echo "NIC: <input type='text' name='nic' value='" . $lecturerData['nic'] . "'><br>";
-        echo "Password: <input type='text' name='password' value='" . $lecturerData['password'] . "'><br>";
-        echo "Confirmed Password: <input type='text' name='confirmedpassword' value='" . $lecturerData['confirmedpassword'] . "'><br>";
-        echo "Specialization: <input type='text' name='specialization' value='" . $lecturerData['specialization'] . "'><br>";
-        echo "Subject: <input type='text' name='subject' value='" . $lecturerData['subject'] . "'><br>";
-        echo "D.O.B: <input type='text' name='dob' value='" . $lecturerData['dob'] . "'><br>";
-        echo "Experiences: <input type='text' name='Experiences' value='" . $lecturerData['Experiences'] . "'><br>";
-        echo "<input type='submit' value='Update'>";
-        echo "</form>";
+
+// Check if the 'id' parameter is set in the URL
+if(isset($_GET['id'])) {
+    $id = $_GET['id'];
+
+    // Fetch lecturer record based on the ID
+    $query = "SELECT * FROM lecturerinfo WHERE L_ID = $id";
+    $result = mysqli_query($conn, $query);
+
+    if(mysqli_num_rows($result) > 0) {
+        $row = mysqli_fetch_assoc($result);
+        $username = $row['username'];
+        $fname = $row['fname'];
+        $lname = $row['lname'];
+        $gender = $row['gender'];
+        $email = $row['email'];
+        $mobileno = $row['mobileno'];
     } else {
-        echo "User not found";
+        echo "Lecturer not found.";
+        exit();
     }
 } else {
-    echo "No user ID specified";
+    echo "ID parameter is missing.";
+    exit();
 }
+?>
 
-// Close the database connection
-$conn->close();
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Lecturer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Edit Lecturer</h2>
+        <form action="update_lecturer.php" method="post">
+            <input type="hidden" name="id" value="<?php echo $id; ?>">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" value="<?php echo $username; ?>" required><br>
 
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" value="<?php echo $fname; ?>" required><br>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" value="<?php echo $lname; ?>" required><br>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male" <?php if($gender == "male") echo "selected"; ?>>Male</option>
+                <option value="female" <?php if($gender == "female") echo "selected"; ?>>Female</option>
+            </select><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="<?php echo $email; ?>" required><br>
+
+            <label for="mobileno">Mobile No:</label>
+            <input type="text" id="mobileno" name="mobileno" value="<?php echo $mobileno; ?>" required><br>
+
+            <button type="submit">Update</button>
+        </form>
+    </div>
+</body>
+</html>

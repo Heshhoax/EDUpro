@@ -8,6 +8,7 @@
     <!-- custom css file link  -->
     <link rel="stylesheet" href="paymentcss.css">
 
+    <title>Payment Form</title>
 </head>
 <body>
 
@@ -35,7 +36,7 @@
                     <input type="text" placeholder="room - street - locality">
                 </div>
                 <div class="inputBox">
-                <span>city :</span>
+                    <span>city :</span>
                     <input type="text" placeholder="Colombo">
                 </div>
                 
@@ -82,7 +83,6 @@
                     <div class="inputBox">
                         <span>CVV :</span>
                         <input type="text" placeholder="123">
-                        
                     </div>
                 </div>
 

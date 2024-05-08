@@ -7,6 +7,7 @@
     </head>
 
     <body>
+        <?php include'heade.php'; ?>
             <div class="container">
                 <h1>Get In Touch</h1>
                 <p>We would love to respond to your queries and help you succeed.<br>Feel free to get in touch with us.</p>

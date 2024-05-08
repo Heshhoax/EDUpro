@@ -17,19 +17,19 @@ if (isset($_POST["submit"])) {
     }
 
     // Query database to check if admin credentials are valid
-    $query = "SELECT * FROM admin WHERE username = '$username' AND password = '$password'";
+    $query = "SELECT * FROM manager WHERE username = '$username' AND password = '$password'";
     $result = mysqli_query($conn, $query);
 
     if (!$result || mysqli_num_rows($result) == 0) {
         // No admin found with the provided credentials
-        header("location: ../adminlogin.php?error=invalidcredentials");
+        header("location: ../managerlogin.php?error=invalidcredentials");
         exit();
     } else {
-        // Admin login successful, set session variables and redirect to admin dashboard
+        // login successful, set session variables and redirect to admin dashboard
         $row = mysqli_fetch_assoc($result);
-        $_SESSION['uid'] = $row['ID'];
+        $_SESSION['ID'] = $row['ID'];
         $_SESSION['username'] = $row['username'];
-        header("location: ../welcome.php");
+        header("location: ../Hcrud.php");
         exit();
     }
 } else {

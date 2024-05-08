@@ -1,7 +1,6 @@
 <?php
 // Establish database connection
-$conn = new mysqli($serverName,$dbUsername,$dbPassword,$dbName);
-
+require'../../includes/database.php';
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
@@ -15,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['create'])) {
     $address = $_POST['address'];
     $city = $_POST['city'];
     $state = $_POST['state'];
-    $zipCode = $_POST['zip_code'];
+    $zipCode = $_POST['zipCode'];
 
     // SQL query to insert data
     $sql = "INSERT INTO billingAddresses (fName, email, address, city, state, zipCode)
@@ -49,11 +48,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['update'])) {
     $address = $_POST['address'];
     $city = $_POST['city'];
     $state = $_POST['state'];
-    $zipCode = $_POST['zip_code'];
+    $zipCode = $_POST['zipCode'];
 
     // SQL query to update data
     $sql = "UPDATE billing_addresses SET 
-            full_name='$fullName', email='$email', address='$address', city='$city', state='$state', zip_code='$zipCode' 
+            full_name='$fullName', email='$email', address='$address', city='$city', state='$state', zipCode='$zipCode' 
             WHERE id=$id";
 
     if ($conn->query($sql) === TRUE) {
@@ -69,7 +68,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete'])) {
     $id = $_POST['id'];
 
     // SQL query to delete data
-    $sql = "DELETE FROM billing_addresses WHERE id=$id";
+    $sql = "DELETE FROM billingaddresses WHERE id=$id";
 
     if ($conn->query($sql) === TRUE) {
         echo "Record deleted successfully";
@@ -79,4 +78,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete'])) {
 }
 
 $conn->close();
-?>

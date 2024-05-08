@@ -51,7 +51,7 @@ function createuser($conn, $username, $fname, $lname, $email, $password) {
         header("location:../signup.html?error=stmtfailed");
         exit();
     }
-    //$hash = password_hash($password, PASSWORD_DEFAULT);
+   
     mysqli_stmt_bind_param($stmt,"sssss", $username, $fname, $lname, $email, $password);
     mysqli_stmt_execute($stmt);
     echo"registration successful";
@@ -88,7 +88,7 @@ function loginuser($conn,$username,$password){
         $cookie_value = $_SESSION["username"];
         setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 30 days expiration
     
-        header('location:../welcome.php');
+        header('location:../Hcrud.php');
         exit();
     }
 

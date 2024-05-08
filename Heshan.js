@@ -5,19 +5,19 @@ function loadContent(option) {
    
     switch (option) {
         case 'settings':
-            url = 'settings.html';
+            url = 'managerforgotpassword.php';
             break;
         case 'user':
             url = 'Heshancrud.php'; 
             break;
         case 'lecturer':
-            url = 'lecturer.html';
+            url = 'inukaincludes/read.php';
             break;
         case 'financial':
-            url = 'financial.html';
+            url = '##';
             break;
-        case 'help':
-            url = 'help.html';
+        case 'pp':
+            url = 'uploaddp.php';
             break;
         default:
             console.error('Invalid option');

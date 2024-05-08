@@ -17,7 +17,7 @@ if (isset($_POST["submit"])) {
     }
 
     // Query database to check if admin credentials are valid
-    $query = "SELECT * FROM admin WHERE username = '$username' AND password = '$password'";
+    $query = "SELECT * FROM examiner WHERE username = '$username' AND password = '$password'";
     $result = mysqli_query($conn, $query);
 
     if (!$result || mysqli_num_rows($result) == 0) {
@@ -29,7 +29,7 @@ if (isset($_POST["submit"])) {
         $row = mysqli_fetch_assoc($result);
         $_SESSION['uid'] = $row['ID'];
         $_SESSION['username'] = $row['username'];
-        header("location: ../welcome.php");
+        header("location: ../examcrud.php");
         exit();
     }
 } else {

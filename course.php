@@ -9,15 +9,9 @@
     <script src='injava.js'></script>
 </head>
 <body>
-    <!-- <div class="header">
-          <hr>
-          <header>
-              <img src="images/edupro_black.png" width="150" height="60" >
-          </header>
-          <hr>
-          </div>-->
-
-     <?php include('header.php');?>
+     <?php 
+     include 'heade.php';
+     ?>
     
     <div class="packoff" id="side4">
             
@@ -48,57 +42,6 @@
            </div>
            <div id="para"></div>
          </div>
-          <!--
-         <div class="container">
-               <div class="pagination">
-                    <button class="btn1" onclick="backBtn()"><img src="images/arrow.png">Previous</button>
-                    <ul>
-                         <li class="link active" value="1" onclick="activelink()">1</li>
-                         <li class="link active" value="2" onclick="activelink()">2</li>
-                         <li class="link active" value="3" onclick="activelink()">3</li>
-                         <li class="link active" value="4" onclick="activelink()">4</li>
-                         <li class="link active" value="5" onclick="activelink()">5</li>
-                         <li class="link active" value="6" onclick="activelink()">6</li>
-                    </ul>
-                    <button class="btn2" onclick="nextbtn()">next<img src="images/arrow.png"></button>
-               </div>
-         </div>
-
-
-     </div>
-     <script>
-          let link = document.getElementsByClassName("link");
-          let currentValue = 1;
-
-          function activeLink()
-          {
-               for(l of link){
-                    l.classList.remove("active");
-               }
-               event.target.classList.add("active");
-               currentValue = event.target.value;
-          }
-
-          function backBtn(){
-                if(currentValue > 1){
-                for(l of link){
-                    l.classList.remove("active");
-               }
-               currentValue--;
-               link[currentValue-1].classList.add("active");
-               }
-          }
-
-          function nextBtn(){
-           if(currentValue < 6){
-               for(l of link){
-               l.classList.remove("active");
-               }
-               currentValue++;
-               link[currentValue-1].classList.add("active");
-                }
-          }
-     </script>-->
      <?php include('footer.php');?>
 </body>
 </html>

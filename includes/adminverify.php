@@ -29,7 +29,7 @@ if (isset($_POST["submit"])) {
         $row = mysqli_fetch_assoc($result);
         $_SESSION['uid'] = $row['ID'];
         $_SESSION['username'] = $row['username'];
-        header("location: ../welcome.php");
+        header("location: ../imadu1.php");
         exit();
     }
 } else {
@@ -37,4 +37,3 @@ if (isset($_POST["submit"])) {
     header("location: ../adminlogin.php");
     exit();
 }
-?>

@@ -1,70 +1,44 @@
+<?php
+require'includes/database.php';
+/*session_start();
+$id=$_SESSION['uid'];
+$name=$_SESSION['username'];
 
+$sql="SELECT pp FROM userdp WHERE ID=$id";
+$result=$conn->query($sql);
+$row=$result->fetch_assoc();
+$displaypicture=$row['pp'];
+*/
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Manager view</title>
-<link rel="stylesheet" type="text/css" href="Inuka.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Heshan.css">
+    <script src="inuka.js"></script>
+    <title>Dashboard</title>
 </head>
 <body>
-<a  class='btnblue' href="signlecturer.php" button>NEW</button></a>
-<?php
-// Display the table
-echo "<table>
-    <thead>
-        <tr>
-        <th>L_ID</th>
-        <th>Username</th>
-        <th>First name</th>
-        <th>Last name</th>
-        <th>Gender</th>
-        <th>Email</th>
-        <th>Mobile No</th>
-        <th>NIC</th>
-        <th>Password</th>
-        <th>Confirmed Password</th>
-        <th>Specialization</th>
-        <th>Subject</th>
-        <th>D.O.B</th>
-        <th>Experience</th>
-        </tr>
-    </thead>
-    <tbody>";
- 
- require_once('inukaincludes/database.php');
-
- $sql="SELECT * FROM lecturerinfo ";
- $result=$conn->query($sql);
-
- if(!$result){
-    die('invalid query');
- }
-
- while($row=$result->fetch_assoc()){
-    echo "<tr>
-    <td>{$row["L_ID"]}</td>
-    <td>{$row["username"]}</td>
-    <td>{$row["fname"]}</td>
-    <td>{$row["lname"]}</td>
-    <td>{$row["gender"]}</td>
-    <td>{$row["email"]}</td>
-    <td>{$row["mobileno"]}</td>
-    <td>{$row["nic"]}</td>
-    <td>{$row["password"]}</td>
-    <td>{$row["confirmedpassword"]}</td>
-    <td>{$row["specialization"]}</td>
-    <td>{$row["subject"]}</td>
-    <td>{$row["dob"]}</td>
-    <td>{$row["Experiences"]}</td>
-            <td>
-            <a class='btn' href='inukaincludes/crudedit.php?ID={$row['L_ID']}'>Edit</a>
-            <a class='btn btn-danger' href='inukaincludes/cruddel.php?ID={$row['L_ID']}'>Delete</a>
-            </td>
-        </tr>";
- }
-
-?>
-
+    <div class="sidebar">
+        <div class="profile">
+            <div class="profile-picture">
+                <img src=<?php echo $displaypicture; ?> alt="Profile Picture">
+            </div>
+            <h3><?php echo $name; ?></h3>
+            <p>Lecturer</p>
+        </div>
+        <ul class="menu">
+            <li><a href="#" onclick="loadContent('settings')">Profile view</a></li>
+            <li><a href="#" onclick="loadContent('pp')">Add profile photo</a></li>
+            <li><a href="#" onclick="loadContent('reset')">Reset Password</a></li>
+            <li><a href="#" onclick="loadContent('help')">Help and Support</a></li>
+            <li><a href="login.php" onclick="logout('logout')">Logout</a></li>
+        </ul>
+    </div>
+   
+    <div id="contentload">
+        
+    </div>
 </body>
 </html>

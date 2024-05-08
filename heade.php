@@ -35,9 +35,9 @@ else{
 
         </div>
         <!-- Sign Up Button -->
-        <a href="signin.php" id="btn-sign" class="button" style="margin-left: 1450px;">Sign Up</a>
+        <a href="signin.php" id="btn-sign" class="button" style="margin :auto; margin-left:1000px">Sign Up</a>
         
-        <!-- Login Button -->
+        <!-- Login Button -->   
         <a href="login.php" id="login" class="button">Login</a>
        
     </div>
@@ -45,12 +45,13 @@ else{
     <!-- Menu -->
     <div class="header1">
         <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Courses</a></li>
-            <li><a href="#">Lessons</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="uploaddp.php">My Profile</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="course.php">Courses</a></li>
+            <li><a href="lessons.php">Lessons</a></li>
+            <li><a href="contactus1.php">Contact</a></li>
+            <li><a href="FAQ.php">FAQ</a></li>
+            <li><a href="packageandoffers.php">Package & offers</a></li>
+            <li><a href="uploaddp.php">Add DP</a></li>
             <li ><a href="managerlogin.php">Manager</a></li>
             <li><a href="adminlogin.php">Admin</a></li>
             <li><a href="examinerlogin.php">Examiner</a></li>

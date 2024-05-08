@@ -122,7 +122,7 @@
     if(isset($_POST['remember'])) {
     // Set cookie to remember the user's username or email
     $cookie_name = "remember_username_or_email";
-    $cookie_value = $_POST['uid']; // Assuming 'uid' is the name of your input field
+    $cookie_value = $_POST['uid']; 
     setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 30 days expiration
         }
         ?>

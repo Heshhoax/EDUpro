@@ -1,5 +1,5 @@
 <?php
-require_once 'createconn.php';
+require_once '../includes/database.php';
 if(isset($_POST['submit'])){
     
     $Exam_Name=$_POST['Exam_Name'];
@@ -9,7 +9,7 @@ if(isset($_POST['submit'])){
     $Duration=$_POST['Duration'];
 
     $sql="INSERT INTO `exam55`(`Exam_Name`,`Subject_ID`,`Date`,`Time`,`Duration`) VALUES('$Exam_Name','$Subject_ID','$Date','$Time','$Duration')";
-    $result=mysqli_query($con, $sql);
+    $result=mysqli_query($conn, $sql);
     if($result){
         //echo"Data inserted successfully";
         header('location:read.php');

@@ -1,8 +1,8 @@
 <?php
-require_once 'createconn.php';
+require_once '../includes/database.php';
 $Exam_ID=$_GET['updateid']; 
 $sql="SELECT * FROM exam55 WHERE Exam_ID=$Exam_ID";
-$result=mysqli_query($con,$sql);
+$result=mysqli_query($conn,$sql);
 $row=mysqli_fetch_assoc($result);
 $Exam_ID=$row['Exam_ID'];
 $Exam_Name=$row['Exam_Name'];
@@ -19,13 +19,13 @@ if(isset($_POST['submit'])){
     $Duration=$_POST['Duration'];
 
     $sql="UPDATE `exam55` SET Exam_ID='$Exam_ID',Exam_Name='$Exam_Name',Subject_ID='$Subject_ID',Date='$Date',Time='$Time',Duration='$Duration'WHERE Exam_ID='$Exam_ID'";
-    $result=mysqli_query($con, $sql);
+    $result=mysqli_query($conn, $sql);
     if($result){
         //echo"Updated successfully";
         header('location:read.php');
     }
     else{
-        die(mysqli_error($con));
+        die(mysqli_error($conn));
     }
 }
 ?>

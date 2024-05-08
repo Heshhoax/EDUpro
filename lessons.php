@@ -9,11 +9,14 @@
     <!--<script src='main.js'></script>-->
 </head>
 <body>
+    <?php 
+     include 'heade.php';
+     ?>
         <diV  class="feed">
             <video src="images/lesson.mp4" width="555px" controls autoplay muted loop id="video"></video>
             <textarea rows="10" placeholder="FEEDBACKS"  name="FEEDBACKS" id="back"></textarea>
             <button type="submit"id="send" name="feedback" ><img src="images/send.jpg" height="10px" width="5px"></button>
         </diV>
-    
+        <?php include'footer.php'; ?>
 </body>
 </html>

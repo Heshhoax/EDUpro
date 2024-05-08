@@ -1,124 +1,28 @@
-/*Start of Login*/
-
-.log{
-    background-color: white;
-    height: 70vh;
-    width: 100%;
-    margin: 20px;
-    border-radius: 5px;
-    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
-}
- .log h2{
-    color: #800080;
-    font-weight: bold;
-    margin-top: 60px;
-    align-items: center;
-    text-align: center;
- }
-
- #side15{
-    margin-left: 400px;
- }
- #side .inp-btn{
-    color: #800080;
-    font-weight: bold;
-    border-color: #800080;
-    border-radius: 5px;
-    width: 500px;
-    margin-top: 20px;
-    margin-left: 5px;
-    height: 36px;
-    align-items: center; 
- }
- #side .inp-btn1{
-    color: #800080;
-    font-weight: bold;
-    border-color: #800080;
-    border-radius: 5px;
-    width: 500px;
-    margin-top: 20px;
-    margin-left: 55px;
-    height: 36px;
-    align-items: center; 
- }
- 
-.log h5{
-    color: #800080;
-    margin-top: 5px;
-    margin-right: 750px;
-    text-align: center;
-}
-.log h5:hover{
-    color: black;
-    font-weight: bold;  
-    cursor: pointer; 
-}
-.log1 h6{
-    color: #800080;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    text-align: center;
-}
-.log1 h6:hover{
-    color: black;
-    font-weight: bold;  
-    cursor: pointer; 
-}
-#login {
-    width: 150px;
-    height: 22px;
-    margin-top: 150px;
-    color: #800080;
-    background-color: white;
-    margin-left: 690px;
-    align-items: center;
-    border-radius: 3px ;
-    font-weight: bold;
-}
-#login:hover{
-    color:white;
-    background: #800080;
-    cursor: pointer;
-}
-#login1{
-    width: 150px;
-    height: 22px;
-    color: #800080;
-    background-color: white;
-    margin-top: 20px;
-    margin-left: 1300px;
-    align-items: center;
-    border-radius: 3px ;
-    font-weight: bold;
-}
-#login1:hover{
-    color:white;
-    background: #800080;
-    cursor: pointer;
-}
-/*End of Login*/
-
-/*Start of Package And Offers*/
+/Start of Package And Offers/
 .packagerow {
     display: flex;
     justify-content: center;
+    margin-top: 40px;
+    background: #e8c7ee;
+
 }
 
-#side0{
-    background-color: white;
-    height: 100vh;
-    border-radius: 5px;
-    box-shadow: rgb(100,100,111,0.2)0px 7px 29px 0px ;
+.side0 {
+    width: 80%;
+    margin: 50px;
+    color: #800080;
 }
 
-#side0 h3,h2{
+.side0 h3,
+h2 {
     color: #800080;
     font-weight: bold;
     margin-top: 5px;
     align-items: center;
     text-align: center;
 }
-#side0 h4{
+
+.side0 h4 {
     color: #800080;
     background-color: yellow;
     font-weight: bold;
@@ -128,7 +32,7 @@
     text-align: left;
 }
 
-#side0 h5{
+.side0 h5 {
     color: #800080;
     font-weight: bold;
     margin-top: 0px;
@@ -137,203 +41,138 @@
     text-align: left;
 }
 
-#side1{
+#side1 {
     background-color: white;
-    height: 85vh;
+    height: 75vh;
     width: 55vh;
     border-radius: 5px;
-    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px; ;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    ;
     align-items: center;
     text-align: center;
 }
 
-#side1 p{
+#side1 p {
     margin-top: 0px;
     cursor: pointer;
     color: #800080;
 }
 
-#side1 p:hover{
-    color: black;  
+#side1 p:hover {
+    color: black;
 }
 
-.buy{
+.buy {
     margin-top: 30px;
 }
 
-#btn-buy{
+#btn-buy {
     width: 100px;
     height: 20px;
     color: white;
     background-color: #800080;
-    border-radius: 3px ;
+    border-radius: 3px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
 }
 
-#btn-buy:hover
-{
-    
+#btn-buy:hover {
+
     color: black;
     background-color: greenyellow;
 }
 
-/*End of Packages And Offers*/
-
-/*Start of course*/
-
-#side4{
-    background-color: white;
-    height: 75vh;
-    border-radius: 5px;
-    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+/End of Packages And Offers/
+/Start of course/
+* {
+    margin: 0px;
+    padding: 0px;
 }
 
-#side4 h2{
+body {
+    background: #e8c7ee;
+
+}
+
+.packoff {
+    width: 80%;
+    margin: 50px auto;
     color: #800080;
-    font-weight: bold;
-    margin-top: 60px;
-    margin-left: 5px;
-    align-items: center;
+
+}
+
+.packoff h2 {
+    color: #800080;
     text-align: left;
 }
-#side7{
+
+.packagerow {
+    display: flex;
+
+
+}
+
+#side7 {
     background-color: white;
     height: 60vh;
     width: 60vh;
     border-radius: 5px;
-    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     align-items: center;
     text-align: center;
-   
 }
-#side7 p{
-    margin-top: 20px;
-    cursor: pointer;
-    color: #800080;
-    min-height: 110px;
-}
-#side7 p:hover{
-    color: black;
-}
-.packagerow {
-    display: flex;
-    justify-content: center;
-   
-}
-#para{
-    
-    margin-top: 20px;
-    margin-left: 10px;
-    cursor: pointer;
-    color: #800080;
-    min-height: 110px;
-}
-.buy1{
+
+.buy1 {
     margin-top: 30px;
     width: 100px;
     height: 20px;
     color: white;
     background-color: #800080;
-    border-radius: 3px ;
+    border-radius: 3px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
 }
-.buy1:hover
-{
-    
+
+.buy1:hover {
+
     color: black;
     background-color: yellow;
 }
-.container{
-    width: 100%;
-    height: 20vh;
-    background-color: #800080;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.pagination{
-    display: flex;
-    align-items: center;
-    background-color:white;
-    padding: 10px 40px;
-    border-radius: 5px;
 
-}
-ul{
-    margin: 10px 20px;
-}
-
-ul li{
-    display: inline-block;
-    margin: 0 10px;
-    width: 25px;
-    height: 20px;
-    border-radius: 50%;
+#para {
+    border-radius: 3px;
+    margin-top: 50px;
+    height: 60vh;
+    color: #800080;
+    background-color: #efa1ef;
     text-align: center;
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 20px;
-    cursor: pointer;
-    background-position: 0 -45px;
-    transition: background-position 0.5s;
-
 }
 
-ul li.active{
-    color: #800080;
-    background-image: -o-repeating-linear-gradient(red,red);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-}
-.btn1, .btn2{
-    display: inline-flex;
-    align-items: center;
-    font-size: 22px;
-    font-weight: 500;
-    color: #800080;
-    background: transparent;
-    outline: none;
-    border: none;
-    cursor: pointer;
-}
-.btn1 img{
-    width: 24px;
-    margin-right: 15px;
-    transform: rotate(180deg);
-}
-.btn2 img{
-    width: 24px;
-    margin-left: 15px;
-  
-}
 
-/*End of course*/
-
-/*Start of Lecture Registration*/
-
-.log{
+/End of course/
+/Start of Lecture Registration/
+.log {
     background-color: white;
     height: 80vh;
     width: 100%;
     margin: 20px;
     border-radius: 5px;
-    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
- .log h1{
+
+.log h1 {
     color: #800080;
     font-weight: bold;
     margin-top: 70px;
     align-items: center;
     text-align: center;
- }
+}
 
- #side5{
+#side5 {
     margin-left: 500px;
- }
+}
 
- #side5 .inp-reg{
+#side5 .inp-reg {
     display: flex;
     color: #800080;
     border-color: #800080;
@@ -342,25 +181,27 @@ ul li.active{
     margin-top: 5px;
     margin-left: 10px;
     height: 15px;
-    align-items: center; 
- }
- .reg {
-    display: flex;   
+    align-items: center;
 }
- #side55{
-    margin-left: 70px;
- }
 
- #side55 .inp-reg{
+.reg {
+    display: flex;
+}
+
+#side55 {
+    margin-left: 70px;
+}
+
+#side55 .inp-reg {
     display: flex;
     color: #800080;
     border-color: #800080;
     border-radius: 3px;
     width: 225px;
     height: 15px;
- }
- 
- #side10 .inp-area{
+}
+
+#side10 .inp-area {
     color: #800080;
     border-color: #800080;
     border-radius: none;
@@ -368,18 +209,20 @@ ul li.active{
     margin-top: 10px;
     margin-left: 500px;
     height: 100px;
-    align-items:center; 
+    align-items: center;
     text-align: left;
- }
- #pripol h5{
-    margin-left: 340px;
- }
- #pripol .term{
-    margin-left: 500px;
- }
- 
+}
 
- #register {
+#pripol h5 {
+    margin-left: 340px;
+}
+
+#pripol .term {
+    margin-left: 500px;
+}
+
+
+#register {
     width: 150px;
     height: 22px;
     margin-top: 10px;
@@ -387,29 +230,30 @@ ul li.active{
     background-color: white;
     margin-left: 685px;
     align-items: center;
-    border-radius: 3px ;
+    border-radius: 3px;
     font-weight: bold;
 }
-#register:hover{
-    color:white;
+
+#register:hover {
+    color: white;
     background: #800080;
     cursor: pointer;
 }
 
- 
-/*End of Lecture Registration*/
 
+/End of Lecture Registration/
 /*Start of Lessons */
 
-.feed{
+.feed {
     background-color: white;
     height: 80vh;
     width: 100%;
     margin: 20px;
     border-radius: 5px;
-    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-#back{
+
+#back {
     color: #800080;
     border-color: #800080;
     border-radius: none;
@@ -419,19 +263,22 @@ ul li.active{
     height: 80px;
     font-weight: bold;
     font-family: 'sans-serif';
-    align-items:center; 
+    align-items: center;
     text-align: left;
 }
-#video{
+
+#video {
     margin-top: 50px;
     margin-left: 500px;
 }
-#send{
+
+#send {
     background-color: white;
 }
-#send:hover{
+
+#send:hover {
     background-color: yellow;
 }
 
 
-/*End of Lessons*/
+/End of Lessons/

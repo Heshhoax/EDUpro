@@ -1,7 +1,7 @@
 <?php
 require'includes/database.php';
 session_start(); 
-$id=$_SESSION['uid'];
+$id=$_SESSION['ID']||$_SESSION['uid'];
 
 
 // Check if the form was submitted

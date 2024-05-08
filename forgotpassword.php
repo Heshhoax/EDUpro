@@ -62,7 +62,7 @@
 <body>
     <div class="container">
         <h2>Forgot Password</h2>
-        <form action="includes/resetpassword.php" method="POST">
+        <form action="includes/userresetpassword.php" method="POST">
             <label for="email">Enter your email address:</label>
             <input type="email" id="email" name="email" required><br><br>
             <button type="submit" name="submit">Reset Password</button>

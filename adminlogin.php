@@ -77,11 +77,10 @@
             <input type="checkbox" id="showPassword"> <label for="showPassword">Show Password</label>
             <div class="remember-forgot">
                 <label><input type="checkbox" id="remember">Remember Me</label>
-                <a href="forgotpassword.php">Forgot Password</a>
+                <a href="adminforgotpassword.php">Forgot Password</a>
             </div>
             <button type="submit" class="btn" name="submit">Login</button>
             <div class="register-link">
-                <p>Don't have an account? <a href="signin.php">Register</a></p>
             </div>
         </form>
     </div>
@@ -105,11 +104,11 @@
 
         //content div load
 
-        document.querySelector('a[href="forgotpassword.php"]').addEventListener('click', function(event) {
+        document.querySelector('a[href="adminforgotpassword.php"]').addEventListener('click', function(event) {
             event.preventDefault(); // Prevent the default link behavior
 
             // Fetch the content of the "forgotpassword.php" page
-            fetch('forgotpassword.php')
+            fetch('adminforgotpassword.php')
                 .then(response => response.text()) // Convert response to text
                 .then(html => {
                     // Set the content of the "content" div to the fetched HTML

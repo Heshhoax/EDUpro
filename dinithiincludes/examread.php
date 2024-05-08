@@ -1,5 +1,5 @@
 <?php
-include 'createconn.php';
+include '../includes/database.php';
 
 ?>
 
@@ -16,7 +16,7 @@ include 'createconn.php';
     <body>
 
     <div class="container">
-       <button class="btn btn-primary my-5"><a href="create.php"class="text-light">Create Exam</a></button> 
+       <button class="btn btn-primary my-5"><a href="examform.php"class="text-light">Create Exam</a></button> 
        <table class="table">
         <thead>
             <tr>
@@ -33,7 +33,7 @@ include 'createconn.php';
 
         <?php
         $sql="select * from `exam55`";
-        $result=mysqli_query($con,$sql);
+        $result=mysqli_query($conn,$sql);
 
         if($result){
             while($row=mysqli_fetch_assoc($result)){
@@ -51,8 +51,8 @@ include 'createconn.php';
                 <td>'.$Time.'</td>
                 <td>'.$Duration.'</td>
                 <td>
-            <button><a href="update.php? updateid='.$Exam_ID.'">Update</a></button>
-            <button><a href="delete.php? deleteid='.$Exam_ID.'">Delete</a></button>
+            <button><a href="examupdate.php? updateid='.$Exam_ID.'">Update</a></button>
+            <button><a href="examdelete.php? deleteid='.$Exam_ID.'">Delete</a></button>
             </td>
                 </tr>';
             }

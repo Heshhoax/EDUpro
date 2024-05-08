@@ -66,7 +66,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <form action="includes/lectureverify.php" method="POST">
+        <form action="includes/lecturerverify.php" method="POST">
         <h1>Lecturer Login</h1>
             <div class="input-box">
                 <input type="text" placeholder="Enter Username/Email" name="uid">
@@ -77,7 +77,7 @@
             <input type="checkbox" id="showPassword"> <label for="showPassword">Show Password</label>
             <div class="remember-forgot">
                 <label><input type="checkbox" id="remember">Remember Me</label>
-                <a href="forgotpassword.php">Forgot Password</a>
+                <a href="lecturerforgotpassword.php">Forgot Password</a>
             </div>
             <button type="submit" class="btn" name="submit">Login</button>
             <div class="register-link">
@@ -105,11 +105,11 @@
 
         //content div load
 
-        document.querySelector('a[href="forgotpassword.php"]').addEventListener('click', function(event) {
+        document.querySelector('a[href="lecturerforgotpassword.php"]').addEventListener('click', function(event) {
             event.preventDefault(); // Prevent the default link behavior
 
             // Fetch the content of the "forgotpassword.php" page
-            fetch('forgotpassword.php')
+            fetch('lecturerforgotpassword.php')
                 .then(response => response.text()) // Convert response to text
                 .then(html => {
                     // Set the content of the "content" div to the fetched HTML
